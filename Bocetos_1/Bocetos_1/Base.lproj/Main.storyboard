@@ -8,655 +8,114 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Controlador Vista Cita-->
+        <!--Otro Controlador-->
         <scene sceneID="viN-6T-GGp">
             <objects>
-                <viewController id="oWA-M5-hNQ" customClass="ControladorVistaCita" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oWA-M5-hNQ" customClass="OtroControlador" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="81H-1K-jML">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-cu-4ZH">
-                                <rect key="frame" x="196" y="526" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-cu-4ZH">
+                                <rect key="frame" x="136" y="486" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="C8H-A0-WuC"/>
-                                    <constraint firstAttribute="height" constant="20" id="xgI-Dy-KH3"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhs-VW-7yS">
-                                <rect key="frame" x="176" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="HRU-Qb-Dtp"/>
-                                    <constraint firstAttribute="height" constant="20" id="e2O-OI-gm7"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-8O-voM">
-                                <rect key="frame" x="156" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="T30-dj-RNa"/>
-                                    <constraint firstAttribute="width" constant="20" id="wLu-vN-Wq4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWt-Ke-Yft">
-                                <rect key="frame" x="136" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="TZE-Yt-3y1"/>
-                                    <constraint firstAttribute="width" constant="20" id="zcg-ny-XY4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXN-8Y-zV8">
-                                <rect key="frame" x="276" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Bnh-hs-j5O"/>
-                                    <constraint firstAttribute="width" constant="20" id="i3m-ry-WcP"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXh-06-sQE">
-                                <rect key="frame" x="256" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Vda-eH-iKC"/>
-                                    <constraint firstAttribute="width" constant="20" id="ly4-u4-80p"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPT-vD-l96">
-                                <rect key="frame" x="236" y="526" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="EOz-6e-byU"/>
-                                    <constraint firstAttribute="height" constant="20" id="Evc-2L-2og"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8c-gS-X88">
-                                <rect key="frame" x="196" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="PEj-gY-HhJ"/>
-                                    <constraint firstAttribute="width" constant="20" id="pah-kR-mKw"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-48-2v2">
-                                <rect key="frame" x="176" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="MQQ-hw-Gkm"/>
-                                    <constraint firstAttribute="width" constant="20" id="jSQ-ye-VGd"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-19-bMj">
-                                <rect key="frame" x="156" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="FTB-Qz-Z38"/>
-                                    <constraint firstAttribute="height" constant="20" id="mwk-aR-5xB"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdy-s3-tED">
-                                <rect key="frame" x="136" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="8tu-Oh-nYk"/>
-                                    <constraint firstAttribute="height" constant="20" id="saQ-oM-z02"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QP-aZ-xeJ">
-                                <rect key="frame" x="276" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="8jz-zh-kUt"/>
-                                    <constraint firstAttribute="height" constant="20" id="X7m-HB-Kjx"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnJ-l8-uJC">
-                                <rect key="frame" x="256" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="N26-mM-AMO"/>
-                                    <constraint firstAttribute="height" constant="20" id="c3E-jy-F4U"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-Vc-yPn">
-                                <rect key="frame" x="236" y="506" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="PmC-kX-nKf"/>
-                                    <constraint firstAttribute="width" constant="20" id="hWV-gS-QIJ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Gd-s8-7kY">
-                                <rect key="frame" x="196" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="JUs-Kb-68m"/>
-                                    <constraint firstAttribute="width" constant="20" id="Rwv-n3-jpm"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a02-Fc-6wp">
-                                <rect key="frame" x="216" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="O02-eh-THn"/>
-                                    <constraint firstAttribute="height" constant="20" id="Rl9-Ko-g3u"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8S4-zX-DYp">
-                                <rect key="frame" x="176" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="7ff-RY-AZ4"/>
-                                    <constraint firstAttribute="height" constant="20" id="Vz4-LB-5CF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYn-uM-bPh">
-                                <rect key="frame" x="156" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="dHH-1B-Xhy"/>
-                                    <constraint firstAttribute="height" constant="20" id="zQS-Eb-aV0"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhi-kS-6kn">
-                                <rect key="frame" x="136" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="7gw-y4-7st"/>
-                                    <constraint firstAttribute="height" constant="20" id="AlF-JO-g0c"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lI9-8l-zqC">
-                                <rect key="frame" x="276" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="C2F-bm-AKd"/>
-                                    <constraint firstAttribute="width" constant="20" id="jgZ-jK-DgJ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7Z-uY-als">
-                                <rect key="frame" x="256" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="NAy-cl-YU4"/>
-                                    <constraint firstAttribute="height" constant="20" id="V6O-SD-Zcv"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-Ol-0qm">
-                                <rect key="frame" x="236" y="486" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="9TF-Kp-Qbp"/>
-                                    <constraint firstAttribute="width" constant="20" id="K3D-NN-c2E"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yd-eb-kXj">
-                                <rect key="frame" x="196" y="466" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="58Q-Db-BEa"/>
-                                    <constraint firstAttribute="width" constant="20" id="qd8-Zc-Q5W"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsR-sj-aAP">
-                                <rect key="frame" x="216" y="466" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="62I-W8-EVU"/>
-                                    <constraint firstAttribute="width" constant="20" id="USo-ss-AZF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23q-9p-KWm">
-                                <rect key="frame" x="176" y="466" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="0jB-y7-h1D"/>
-                                    <constraint firstAttribute="height" constant="20" id="GLY-LY-j4f"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-mZ-U6P">
-                                <rect key="frame" x="156" y="466" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="H1o-2y-V4E"/>
-                                    <constraint firstAttribute="width" constant="20" id="zbd-9H-br3"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BET-au-xZk">
-                                <rect key="frame" x="136" y="466" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="2kh-Km-h6q"/>
-                                    <constraint firstAttribute="width" constant="20" id="OaI-Uf-OyM"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cv5-oy-yKD">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cv5-oy-yKD">
                                 <rect key="frame" x="116" y="466" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="c05-Vy-wBf"/>
-                                    <constraint firstAttribute="width" constant="20" id="ffV-1b-5Wc"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mtn-DF-lZO">
-                                <rect key="frame" x="276" y="466" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-6P-T4Y">
+                                <rect key="frame" x="96" y="407" width="40" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="38d-bM-LF9"/>
-                                    <constraint firstAttribute="height" constant="20" id="Obg-8I-zZi"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IR4-Yd-rsn">
-                                <rect key="frame" x="256" y="466" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCp-5J-mnB">
+                                <rect key="frame" x="116" y="426" width="20" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="j2Q-mw-l3j"/>
-                                    <constraint firstAttribute="height" constant="20" id="uoZ-aO-ybv"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88i-5s-FbD">
-                                <rect key="frame" x="236" y="466" width="20" height="20"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujl-Ee-ZkS">
+                                <rect key="frame" x="136" y="407" width="160" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6S-5c-ocW">
+                                <rect key="frame" x="156" y="486" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Der-1Y-MSA"/>
-                                    <constraint firstAttribute="width" constant="20" id="t7b-7L-90i"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-RA-YMx">
-                                <rect key="frame" x="196" y="446" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXN-8Y-zV8">
+                                <rect key="frame" x="236" y="486" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntc-9V-Jlh">
+                                        <rect key="frame" x="20" y="0.0" width="20" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F6n-Cf-em8">
+                                <rect key="frame" x="156" y="426" width="120" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="SHg-fR-4QO"/>
-                                    <constraint firstAttribute="height" constant="20" id="xIv-22-afT"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-vz-kty">
-                                <rect key="frame" x="216" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="67F-62-MrF"/>
-                                    <constraint firstAttribute="height" constant="20" id="eCd-St-Ird"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGJ-cc-J8g">
+                                <rect key="frame" x="196" y="327" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-bJ-5hU">
-                                <rect key="frame" x="176" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="KXD-vQ-tG2"/>
-                                    <constraint firstAttribute="width" constant="20" id="Wpf-V9-f0L"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4k-y9-7eJ">
-                                <rect key="frame" x="156" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="1Gm-pH-o0c"/>
-                                    <constraint firstAttribute="height" constant="20" id="HBj-i8-g3h"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-Ah-Ih2">
-                                <rect key="frame" x="136" y="446" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJW-Ne-52q">
+                                <rect key="frame" x="196" y="364" width="20" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="RIv-Xv-WQM"/>
-                                    <constraint firstAttribute="width" constant="20" id="a59-ED-vRG"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvt-lW-9gd">
-                                <rect key="frame" x="276" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="a5b-fl-o9C"/>
-                                    <constraint firstAttribute="height" constant="20" id="hK4-4I-NQ6"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S16-zv-gKc">
-                                <rect key="frame" x="256" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="k0E-kT-6EV"/>
-                                    <constraint firstAttribute="height" constant="20" id="w9W-lP-xEo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P6u-gA-dWa">
-                                <rect key="frame" x="236" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Smj-uB-cxr"/>
-                                    <constraint firstAttribute="height" constant="20" id="tMm-i3-GgY"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AgH-5z-JVW">
-                                <rect key="frame" x="196" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="clW-2M-RG3"/>
-                                    <constraint firstAttribute="height" constant="20" id="lBp-ZL-Rv0"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-49-FVQ">
-                                <rect key="frame" x="216" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="L5p-sF-0Le"/>
-                                    <constraint firstAttribute="width" constant="20" id="O4X-gG-HWE"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAb-KJ-dpH">
-                                <rect key="frame" x="176" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="0wB-qF-jgd"/>
-                                    <constraint firstAttribute="width" constant="20" id="qmH-OX-aYs"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-Sa-MbF">
-                                <rect key="frame" x="156" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="TCZ-oO-dNx"/>
-                                    <constraint firstAttribute="height" constant="20" id="WE4-p5-Q3U"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9FE-bU-lpe">
-                                <rect key="frame" x="136" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="8aS-Ra-zTn"/>
-                                    <constraint firstAttribute="height" constant="20" id="b6k-s4-Wlk"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00d-5h-z6z">
-                                <rect key="frame" x="276" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="mOx-tO-Zq6"/>
-                                    <constraint firstAttribute="width" constant="20" id="vQt-rd-BoK"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-xA-bIh">
-                                <rect key="frame" x="256" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="647-4s-kFK"/>
-                                    <constraint firstAttribute="height" constant="20" id="Vrj-4N-mwA"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkX-8X-8gV">
-                                <rect key="frame" x="236" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="BTp-uE-fwj"/>
-                                    <constraint firstAttribute="height" constant="20" id="mKo-2y-wed"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umm-XB-b0t">
-                                <rect key="frame" x="196" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="1Yd-Yx-MQA"/>
-                                    <constraint firstAttribute="height" constant="20" id="WhG-Sx-XAp"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qFx-wt-gEV">
-                                <rect key="frame" x="216" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="bET-Cb-1ph"/>
-                                    <constraint firstAttribute="width" constant="20" id="wH4-rR-gtd"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EkK-uU-qUO">
-                                <rect key="frame" x="176" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Tz1-gc-u8K"/>
-                                    <constraint firstAttribute="height" constant="20" id="eEw-YZ-jBO"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zdn-8J-6EL">
-                                <rect key="frame" x="156" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="NJ5-qH-9eo"/>
-                                    <constraint firstAttribute="height" constant="20" id="plY-Ty-awJ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMN-8u-FjN">
-                                <rect key="frame" x="136" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Vbn-cB-ebp"/>
-                                    <constraint firstAttribute="height" constant="20" id="ihd-AQ-d8I"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usY-J2-9RL">
-                                <rect key="frame" x="116" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="MFW-wr-VoH"/>
-                                    <constraint firstAttribute="width" constant="20" id="No5-fl-Ngl"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-6P-T4Y">
-                                <rect key="frame" x="96" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="LiL-AS-jSI"/>
-                                    <constraint firstAttribute="height" constant="20" id="g5q-i9-fUO"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQb-ha-qih">
-                                <rect key="frame" x="276" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="WsK-JU-8UT"/>
-                                    <constraint firstAttribute="width" constant="20" id="tl6-xf-1eK"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-W4-OHT">
-                                <rect key="frame" x="256" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="3lv-5S-Z1O"/>
-                                    <constraint firstAttribute="width" constant="20" id="XGL-Ff-oJx"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av7-8S-cG0">
-                                <rect key="frame" x="236" y="407" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="7rc-SY-Lfc"/>
-                                    <constraint firstAttribute="height" constant="20" id="QNO-av-C71"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-Mm-vZk">
-                                <rect key="frame" x="116" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="qG3-nj-gbX"/>
-                                    <constraint firstAttribute="width" constant="20" id="rjq-hn-Quf"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5g-85-wYR">
-                                <rect key="frame" x="96" y="446" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="ShK-vI-QL2"/>
-                                    <constraint firstAttribute="width" constant="20" id="bwG-tz-DVP"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCp-5J-mnB">
-                                <rect key="frame" x="116" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="N0B-lA-Xgj"/>
-                                    <constraint firstAttribute="width" constant="20" id="OHk-Yd-qdD"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-Es-GCW">
-                                <rect key="frame" x="96" y="426" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Lhc-v7-81U"/>
-                                    <constraint firstAttribute="height" constant="20" id="miW-mc-zqo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJW-Ne-52q">
-                                <rect key="frame" x="196" y="387" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="eKe-ku-5KT"/>
-                                    <constraint firstAttribute="height" constant="20" id="sQt-PY-TaF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2z-L9-I5i">
-                                <rect key="frame" x="196" y="367" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="QwP-da-nwi"/>
-                                    <constraint firstAttribute="height" constant="20" id="VHO-Yq-cJz"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzt-4g-92J">
-                                <rect key="frame" x="176" y="347" width="20" height="20"/>
+                                <rect key="frame" x="176" y="327" width="20" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="L2i-s0-h0v"/>
-                                    <constraint firstAttribute="height" constant="20" id="jkc-QW-mtp"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-8v-UZc">
-                                <rect key="frame" x="176" y="327" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="JHf-eH-L8c"/>
-                                    <constraint firstAttribute="height" constant="20" id="y93-kh-1V8"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EyN-sv-rYm">
-                                <rect key="frame" x="256" y="347" width="20" height="20"/>
+                                <rect key="frame" x="256" y="327" width="20" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="AQ8-eh-4qY"/>
-                                    <constraint firstAttribute="height" constant="20" id="VV4-L6-bJ2"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8U-bf-gXG">
-                                <rect key="frame" x="256" y="327" width="20" height="20"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-Pk-Hin">
+                                <rect key="frame" x="236" y="364" width="20" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="UWZ-Jf-88b"/>
-                                    <constraint firstAttribute="width" constant="20" id="hxL-Bt-VIR"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMj-Pk-Hin">
-                                <rect key="frame" x="236" y="387" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="UGm-Y9-Pgn"/>
-                                    <constraint firstAttribute="width" constant="20" id="moD-pk-cqG"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0V-8a-prj">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0V-8a-prj">
                                 <rect key="frame" x="236" y="307" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="0vd-Ui-bHg"/>
-                                    <constraint firstAttribute="height" constant="20" id="lcq-Fv-Ncx"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-Ll-jOu">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-Ll-jOu">
                                 <rect key="frame" x="196" y="307" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="bTR-sU-Obd"/>
-                                    <constraint firstAttribute="width" constant="20" id="xgJ-UU-Svs"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-R4-rrQ">
                                 <rect key="frame" x="216" y="327" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="NfU-tI-GmA"/>
-                                    <constraint firstAttribute="height" constant="20" id="x3T-eC-GQP"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGo-Ge-ANF">
-                                <rect key="frame" x="236" y="367" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Tne-YV-PhE"/>
-                                    <constraint firstAttribute="width" constant="20" id="dsA-Nw-PCK"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGJ-cc-J8g">
-                                <rect key="frame" x="216" y="387" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="4pE-vc-yvN"/>
-                                    <constraint firstAttribute="height" constant="20" id="KC2-Sf-YlH"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-lb-DBj">
-                                <rect key="frame" x="216" y="367" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="5xQ-5Z-mem"/>
-                                    <constraint firstAttribute="width" constant="20" id="ntw-17-J6L"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01V-5m-5z3">
-                                <rect key="frame" x="216" y="347" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="JDr-OC-Xgs"/>
-                                    <constraint firstAttribute="height" constant="20" id="ujn-RC-XdO"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaA-bJ-uU4">
-                                <rect key="frame" x="196" y="347" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Uei-nS-cSn"/>
-                                    <constraint firstAttribute="height" constant="20" id="zZg-Ow-E3f"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-Yc-DhG">
-                                <rect key="frame" x="196" y="327" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="NZx-y1-0x7"/>
-                                    <constraint firstAttribute="height" constant="20" id="yBf-7i-qwf"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x21-tD-ZHM">
-                                <rect key="frame" x="236" y="347" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="9pi-h6-rN6"/>
-                                    <constraint firstAttribute="width" constant="20" id="XtU-jL-uxr"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-0a-DmJ">
-                                <rect key="frame" x="236" y="327" width="20" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="BrD-zI-wQj"/>
-                                    <constraint firstAttribute="width" constant="20" id="oJ9-uE-wLe"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FlO-fH-cdo"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="ujl-Ee-ZkS" firstAttribute="top" secondItem="Wzt-4g-92J" secondAttribute="bottom" constant="40" id="05c-Dc-scZ"/>
+                            <constraint firstItem="TGJ-cc-J8g" firstAttribute="leading" secondItem="Wzt-4g-92J" secondAttribute="trailing" id="4NE-bH-19f"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="top" secondItem="TGJ-cc-J8g" secondAttribute="top" id="Vlz-SK-rwb"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="trailing" secondItem="T6S-5c-ocW" secondAttribute="trailing" id="WZW-47-bFG"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="leading" secondItem="FlO-fH-cdo" secondAttribute="leading" constant="176" id="djK-6E-ZNK"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="top" secondItem="EyN-sv-rYm" secondAttribute="top" id="kyr-1M-Hcq"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="top" secondItem="FlO-fH-cdo" secondAttribute="top" constant="268" id="rhI-0U-Mb5"/>
+                            <constraint firstItem="Wzt-4g-92J" firstAttribute="top" secondItem="oFh-R4-rrQ" secondAttribute="top" id="ric-6Z-c4x"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="B3s-Rs-rV1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAR-Pi-YBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1102" y="4"/>
+            <point key="canvasLocation" x="-1103.0534351145038" y="3.5211267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -709,9 +168,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="4KM-Uu-10s" kind="presentation" modalPresentationStyle="fullScreen" id="6KI-az-daR"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-sL-fUD">
                                         <rect key="frame" x="7" y="182" width="75" height="35"/>
@@ -720,9 +176,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="l0y-fZ-Hw0" kind="presentation" destinationCreationSelector="moviendo_pantalla:" modalPresentationStyle="fullScreen" id="RiU-p1-FAj"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-tx-f0n">
                                         <rect key="frame" x="7" y="344" width="75" height="35"/>
@@ -732,7 +185,7 @@
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="oWA-M5-hNQ" kind="presentation" modalPresentationStyle="fullScreen" id="H0A-tf-U0I"/>
+                                            <segue destination="l0y-fZ-Hw0" kind="show" id="k5z-0n-67Y"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -773,98 +226,121 @@
             </objects>
             <point key="canvasLocation" x="-132.06106870229007" y="3.5211267605633805"/>
         </scene>
-        <!--Controlador Vista Cita-->
+        <!--Otro Controlador-->
         <scene sceneID="oTL-Ft-n39">
             <objects>
-                <viewController id="4KM-Uu-10s" customClass="ControladorVistaCita" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4KM-Uu-10s" customClass="OtroControlador" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9wp-Y2-p7A">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-ry-vlO">
-                                <rect key="frame" x="226" y="364" width="40" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-ry-vlO">
+                                <rect key="frame" x="255" y="388.66666666666669" width="40" height="80"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="oDS-qc-13a"/>
-                                    <constraint firstAttribute="height" constant="20" id="tmu-ZZ-zTH"/>
+                                    <constraint firstAttribute="width" constant="40" id="aVR-IM-IYl"/>
+                                    <constraint firstAttribute="height" constant="80" id="kOn-z0-2nX"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-Ky-ITR">
-                                <rect key="frame" x="246" y="384" width="20" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-Ky-ITR">
+                                <rect key="frame" x="275" y="408.66666666666669" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="U1C-pG-7cl"/>
-                                    <constraint firstAttribute="width" constant="20" id="bp5-c7-pVO"/>
+                                    <constraint firstAttribute="width" constant="20" id="mR1-YV-3Nz"/>
+                                    <constraint firstAttribute="height" constant="20" id="y7Z-nV-rze"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-pU-k69">
-                                <rect key="frame" x="146" y="344" width="40" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-pZ-qc8">
+                                <rect key="frame" x="137" y="408.66666666666669" width="119" height="60"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Pq5-OO-t39"/>
-                                    <constraint firstAttribute="height" constant="20" id="ztW-8r-Isu"/>
+                                    <constraint firstAttribute="width" constant="119" id="abL-24-EkN"/>
+                                    <constraint firstAttribute="height" constant="60" id="cQg-DA-kjA"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-pZ-qc8">
-                                <rect key="frame" x="107" y="384" width="119" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkV-G3-2mG">
+                                <rect key="frame" x="295" y="408.66666666666669" width="20" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Aq-4O-PIf"/>
+                                    <constraint firstAttribute="width" constant="20" id="xwn-qK-RKV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mt0-Em-gZ0">
+                                <rect key="frame" x="117" y="448.66666666666669" width="20" height="20"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="67N-bf-eCI"/>
-                                    <constraint firstAttribute="width" constant="20" id="8wb-AR-RGf"/>
+                                    <constraint firstAttribute="height" constant="20" id="EqE-EK-DcN"/>
+                                    <constraint firstAttribute="width" constant="20" id="inm-bN-p1c"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkV-G3-2mG">
-                                <rect key="frame" x="266" y="384" width="20" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U74-iU-LLe">
+                                <rect key="frame" x="176.66666666666666" y="468.66666666666669" width="40" height="20"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="2XK-Ln-T8I"/>
-                                    <constraint firstAttribute="height" constant="20" id="L7l-D9-K1U"/>
+                                    <constraint firstAttribute="height" constant="20" id="K6O-g1-GID"/>
+                                    <constraint firstAttribute="width" constant="40" id="hSU-2Z-OIM"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-Ar-ra1">
-                                <rect key="frame" x="127" y="364" width="79" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-EK-fNh">
+                                <rect key="frame" x="216" y="468.66666666666669" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2TJ-rt-jQC"/>
+                                    <constraint firstAttribute="height" constant="40" id="8nZ-kL-VPp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEe-wf-e0R">
+                                <rect key="frame" x="137" y="468.66666666666669" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QGA-zd-pL5"/>
+                                    <constraint firstAttribute="width" constant="40" id="ihk-gL-Jkj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGg-pU-k69">
+                                <rect key="frame" x="176.66666666666666" y="368.66666666666669" width="40" height="20"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="QR1-aM-9Qa"/>
-                                    <constraint firstAttribute="width" constant="20" id="yBp-pw-tui"/>
+                                    <constraint firstAttribute="height" constant="20" id="dUe-c3-PLI"/>
+                                    <constraint firstAttribute="width" constant="40" id="vHp-kn-cI8"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mt0-Em-gZ0">
-                                <rect key="frame" x="87" y="424" width="20" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-Ar-ra1">
+                                <rect key="frame" x="157" y="388.66666666666669" width="79" height="20"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="d8R-1U-lR2"/>
-                                    <constraint firstAttribute="height" constant="20" id="vGh-lu-Gif"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U74-iU-LLe">
-                                <rect key="frame" x="146" y="443" width="40" height="20"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="9a7-qQ-Ais"/>
-                                    <constraint firstAttribute="height" constant="20" id="t0T-nb-bJM"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-EK-fNh">
-                                <rect key="frame" x="186" y="443" width="40" height="40"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="BED-ux-etb"/>
-                                    <constraint firstAttribute="width" constant="20" id="TFI-5L-KIl"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEe-wf-e0R">
-                                <rect key="frame" x="107" y="443" width="40" height="40"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="ZxI-du-5mA"/>
-                                    <constraint firstAttribute="width" constant="20" id="l0b-Ob-P6e"/>
+                                    <constraint firstAttribute="width" constant="79" id="OhQ-vq-LMO"/>
+                                    <constraint firstAttribute="height" constant="20" id="VKB-qT-KDV"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tq4-gj-xGK"/>
                         <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
                         <color key="tintColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="fc1-Ky-ITR" firstAttribute="trailing" secondItem="VoI-ry-vlO" secondAttribute="trailing" id="0d1-yZ-Q62"/>
+                            <constraint firstItem="HPX-Ar-ra1" firstAttribute="centerX" secondItem="rXo-pZ-qc8" secondAttribute="centerX" id="2Ew-7m-TG7"/>
+                            <constraint firstItem="mt0-Em-gZ0" firstAttribute="bottom" secondItem="rXo-pZ-qc8" secondAttribute="bottom" id="3et-uc-Ov3"/>
+                            <constraint firstItem="fc1-Ky-ITR" firstAttribute="top" secondItem="CkV-G3-2mG" secondAttribute="top" id="5lF-qJ-hJz"/>
+                            <constraint firstItem="bEe-wf-e0R" firstAttribute="leading" secondItem="rXo-pZ-qc8" secondAttribute="leading" id="7uE-aP-ryc"/>
+                            <constraint firstItem="U74-iU-LLe" firstAttribute="centerX" secondItem="rXo-pZ-qc8" secondAttribute="centerX" id="9b1-95-5yi"/>
+                            <constraint firstItem="CkV-G3-2mG" firstAttribute="centerY" secondItem="VoI-ry-vlO" secondAttribute="centerY" id="HOQ-lh-LFt"/>
+                            <constraint firstItem="VoI-ry-vlO" firstAttribute="leading" secondItem="rXo-pZ-qc8" secondAttribute="trailing" constant="-1" id="HZw-e4-X6G"/>
+                            <constraint firstItem="XGg-pU-k69" firstAttribute="centerX" secondItem="HPX-Ar-ra1" secondAttribute="centerX" id="IBa-od-lLZ"/>
+                            <constraint firstItem="FU4-EK-fNh" firstAttribute="trailing" secondItem="rXo-pZ-qc8" secondAttribute="trailing" id="IpV-7r-ogM"/>
+                            <constraint firstItem="U74-iU-LLe" firstAttribute="top" secondItem="rXo-pZ-qc8" secondAttribute="bottom" id="QDg-p6-jnw"/>
+                            <constraint firstItem="HPX-Ar-ra1" firstAttribute="top" secondItem="XGg-pU-k69" secondAttribute="bottom" id="X80-g1-Aca"/>
+                            <constraint firstItem="VoI-ry-vlO" firstAttribute="top" secondItem="fc1-Ky-ITR" secondAttribute="bottom" constant="-40" id="d1Q-od-jN4"/>
+                            <constraint firstItem="rXo-pZ-qc8" firstAttribute="centerX" secondItem="tq4-gj-xGK" secondAttribute="centerX" id="d6D-GC-ghO"/>
+                            <constraint firstItem="rXo-pZ-qc8" firstAttribute="leading" secondItem="mt0-Em-gZ0" secondAttribute="trailing" id="g1d-E7-vE3"/>
+                            <constraint firstItem="FU4-EK-fNh" firstAttribute="top" secondItem="rXo-pZ-qc8" secondAttribute="bottom" id="jBD-F3-1GF"/>
+                            <constraint firstItem="rXo-pZ-qc8" firstAttribute="centerY" secondItem="tq4-gj-xGK" secondAttribute="centerY" id="jVY-49-4we"/>
+                            <constraint firstItem="bEe-wf-e0R" firstAttribute="top" secondItem="rXo-pZ-qc8" secondAttribute="bottom" id="m4V-AX-XlI"/>
+                            <constraint firstItem="rXo-pZ-qc8" firstAttribute="top" secondItem="HPX-Ar-ra1" secondAttribute="bottom" id="tjS-zT-n5a"/>
+                            <constraint firstItem="VoI-ry-vlO" firstAttribute="bottom" secondItem="rXo-pZ-qc8" secondAttribute="bottom" id="wtK-VC-YlN"/>
+                            <constraint firstItem="CkV-G3-2mG" firstAttribute="leading" secondItem="VoI-ry-vlO" secondAttribute="trailing" id="y7D-sP-KC5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jAY-ie-v1R"/>
                 </viewController>
@@ -872,99 +348,144 @@
             </objects>
             <point key="canvasLocation" x="701.52671755725191" y="3.5211267605633805"/>
         </scene>
-        <!--Controlador Vista Cita-->
+        <!--Otro Controlador-->
         <scene sceneID="xPc-V5-sEB">
             <objects>
-                <viewController id="l0y-fZ-Hw0" customClass="ControladorVistaCita" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l0y-fZ-Hw0" customClass="OtroControlador" customModule="Bocetos_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2qI-lN-BZw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-xC-QTg">
-                                <rect key="frame" x="116" y="436" width="160" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-xC-QTg">
+                                <rect key="frame" x="116.66666666666669" y="401" width="160" height="40"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="6jt-tG-QU6"/>
-                                    <constraint firstAttribute="height" constant="20" id="xwZ-2W-iHo"/>
+                                    <constraint firstAttribute="height" constant="40" id="NHf-ET-U5n"/>
+                                    <constraint firstAttribute="width" constant="160" id="QtJ-pX-a3p"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHc-di-8LN">
-                                <rect key="frame" x="136" y="456" width="20" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StF-YN-bXQ">
+                                <rect key="frame" x="136.66666666666666" y="381" width="119.99999999999997" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="SdA-13-eUN"/>
+                                    <constraint firstAttribute="width" constant="120" id="myI-ZS-dfw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHc-di-8LN">
+                                <rect key="frame" x="136" y="421" width="20" height="20"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="RYN-wI-FZk"/>
-                                    <constraint firstAttribute="width" constant="20" id="gvF-Fp-Pdu"/>
+                                    <constraint firstAttribute="width" constant="20" id="2tg-hb-Md2"/>
+                                    <constraint firstAttribute="height" constant="20" id="JeK-6c-aMV"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-UG-eId">
-                                <rect key="frame" x="116" y="376" width="20" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-UG-eId">
+                                <rect key="frame" x="116" y="341" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="PH6-mk-dL4"/>
-                                    <constraint firstAttribute="width" constant="20" id="viJ-5a-FsQ"/>
+                                    <constraint firstAttribute="width" constant="20" id="2Ma-be-YD9"/>
+                                    <constraint firstAttribute="height" constant="20" id="TOl-nN-cuf"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Cq-kfR">
-                                <rect key="frame" x="136" y="376" width="20" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Cq-kfR">
+                                <rect key="frame" x="136" y="341" width="20" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="VyC-mu-L1e"/>
-                                    <constraint firstAttribute="width" constant="20" id="w20-Cj-fD4"/>
+                                    <constraint firstAttribute="height" constant="40" id="q3Q-jM-yYI"/>
+                                    <constraint firstAttribute="width" constant="20" id="yt9-6g-ngv"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZoV-LY-TfO">
-                                <rect key="frame" x="136" y="436" width="20" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoV-LY-TfO">
+                                <rect key="frame" x="136" y="401" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="6rO-i4-Iax"/>
-                                    <constraint firstAttribute="width" constant="20" id="Mh1-0y-OHM"/>
+                                    <constraint firstAttribute="height" constant="20" id="6Ms-BN-mZD"/>
+                                    <constraint firstAttribute="width" constant="20" id="e7Y-Is-6oc"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-fc-JRw">
-                                <rect key="frame" x="176" y="416" width="20" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-fc-JRw">
+                                <rect key="frame" x="176" y="381" width="20" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="J12-Ni-Cht"/>
-                                    <constraint firstAttribute="width" constant="20" id="jfI-FV-flO"/>
+                                    <constraint firstAttribute="height" constant="80" id="95t-Qm-fu6"/>
+                                    <constraint firstAttribute="width" constant="20" id="DsN-zv-VbD"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-W8-enx">
-                                <rect key="frame" x="216" y="416" width="20" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-W8-enx">
+                                <rect key="frame" x="216" y="381" width="20" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="4Ni-gx-f55"/>
-                                    <constraint firstAttribute="height" constant="20" id="DrN-c0-qP5"/>
+                                    <constraint firstAttribute="width" constant="20" id="2lz-SA-AZK"/>
+                                    <constraint firstAttribute="height" constant="80" id="nEH-d1-5pI"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ad1-d3-eRV">
-                                <rect key="frame" x="176" y="376" width="60" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmF-IU-Gpa">
+                                <rect key="frame" x="196" y="321" width="20" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="EAQ-aX-P6Y"/>
-                                    <constraint firstAttribute="width" constant="20" id="GeN-Yi-np9"/>
+                                    <constraint firstAttribute="width" constant="20" id="EzO-3o-Gb9"/>
+                                    <constraint firstAttribute="height" constant="20" id="vXR-os-fY2"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BmF-IU-Gpa">
-                                <rect key="frame" x="196" y="356" width="20" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boT-Fs-fLz">
+                                <rect key="frame" x="176" y="543" width="41.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ad1-d3-eRV">
+                                <rect key="frame" x="176" y="341" width="60" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="ZMt-Gn-iMG"/>
-                                    <constraint firstAttribute="width" constant="20" id="Zr8-QY-zV6"/>
+                                    <constraint firstAttribute="width" constant="60" id="c52-p5-hcR"/>
+                                    <constraint firstAttribute="height" constant="40" id="fNx-Ig-emc"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StF-YN-bXQ">
-                                <rect key="frame" x="136" y="416" width="120" height="80"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="pnr-Z9-Zhq"/>
-                                    <constraint firstAttribute="height" constant="20" id="yg7-eb-egR"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cad-8k-zkP">
+                                <rect key="frame" x="113" y="258" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ukK-3E-Nmh"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="zbt-Cq-kfR" firstAttribute="leading" secondItem="ZoV-LY-TfO" secondAttribute="leading" id="188-YW-rCP"/>
+                            <constraint firstItem="xZ4-UG-eId" firstAttribute="top" secondItem="zbt-Cq-kfR" secondAttribute="top" id="9kN-Us-0Z5"/>
+                            <constraint firstItem="BmF-IU-Gpa" firstAttribute="top" secondItem="cad-8k-zkP" secondAttribute="bottom" constant="77" id="9rR-sr-mFH"/>
+                            <constraint firstItem="qRr-xC-QTg" firstAttribute="centerX" secondItem="ukK-3E-Nmh" secondAttribute="centerX" id="ARj-2R-0Ar"/>
+                            <constraint firstItem="fc7-fc-JRw" firstAttribute="top" secondItem="StF-YN-bXQ" secondAttribute="top" id="BBI-Y9-0ZN"/>
+                            <constraint firstItem="Ad1-d3-eRV" firstAttribute="leading" secondItem="zbt-Cq-kfR" secondAttribute="trailing" constant="20" id="D9t-dP-fQn"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="centerY" secondItem="ukK-3E-Nmh" secondAttribute="centerY" id="EWL-oM-Anz"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="leading" secondItem="fc7-fc-JRw" secondAttribute="trailing" constant="-59.333333333333343" id="GIM-Qu-jMt"/>
+                            <constraint firstItem="N5f-W8-enx" firstAttribute="top" secondItem="StF-YN-bXQ" secondAttribute="top" id="HDR-of-lrc"/>
+                            <constraint firstItem="zbt-Cq-kfR" firstAttribute="leading" secondItem="xZ4-UG-eId" secondAttribute="trailing" id="Mcg-Az-dTZ"/>
+                            <constraint firstItem="Ad1-d3-eRV" firstAttribute="top" secondItem="BmF-IU-Gpa" secondAttribute="bottom" id="NOG-vZ-4Xf"/>
+                            <constraint firstItem="qRr-xC-QTg" firstAttribute="top" secondItem="StF-YN-bXQ" secondAttribute="bottom" constant="-60" id="Opk-o2-j20"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="leading" secondItem="ZoV-LY-TfO" secondAttribute="trailing" constant="-19.333333333333343" id="Q9j-Xb-rZj"/>
+                            <constraint firstItem="Ad1-d3-eRV" firstAttribute="leading" secondItem="boT-Fs-fLz" secondAttribute="leading" id="S0r-sH-gAZ"/>
+                            <constraint firstItem="Ad1-d3-eRV" firstAttribute="leading" secondItem="cad-8k-zkP" secondAttribute="leading" id="S1f-uD-GMn"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="top" secondItem="ZoV-LY-TfO" secondAttribute="bottom" constant="-40" id="Suu-tH-7f6"/>
+                            <constraint firstItem="BmF-IU-Gpa" firstAttribute="centerX" secondItem="Ad1-d3-eRV" secondAttribute="centerX" id="ULL-XZ-QT9"/>
+                            <constraint firstItem="boT-Fs-fLz" firstAttribute="top" secondItem="StF-YN-bXQ" secondAttribute="bottom" constant="82" id="VuJ-nq-bcb"/>
+                            <constraint firstItem="N5f-W8-enx" firstAttribute="leading" secondItem="StF-YN-bXQ" secondAttribute="trailing" constant="-40.666666666666629" id="Vzz-om-rSU"/>
+                            <constraint firstItem="qRr-xC-QTg" firstAttribute="top" secondItem="xZ4-UG-eId" secondAttribute="bottom" constant="40" id="Y07-wy-uEu"/>
+                            <constraint firstItem="cad-8k-zkP" firstAttribute="centerX" secondItem="ukK-3E-Nmh" secondAttribute="centerX" id="abT-pD-T1R"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="leading" secondItem="hHc-di-8LN" secondAttribute="trailing" constant="-19.333333333333343" id="cYW-ch-lTr"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="top" secondItem="zbt-Cq-kfR" secondAttribute="bottom" id="dj7-S2-6DZ"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="centerX" secondItem="ukK-3E-Nmh" secondAttribute="centerX" id="gIv-ZH-8SM"/>
+                            <constraint firstItem="boT-Fs-fLz" firstAttribute="centerX" secondItem="ukK-3E-Nmh" secondAttribute="centerX" id="jOq-Dd-IRc"/>
+                            <constraint firstItem="StF-YN-bXQ" firstAttribute="top" secondItem="Ad1-d3-eRV" secondAttribute="bottom" id="sA0-Lg-fCJ"/>
+                            <constraint firstItem="hHc-di-8LN" firstAttribute="top" secondItem="StF-YN-bXQ" secondAttribute="bottom" constant="-40" id="stz-Sf-wv9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BBX-d7-uZm"/>
+                    <connections>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="cad-8k-zkP" id="5wE-vO-cux"/>
+                        <outlet property="que_dijo_muro_texto" destination="boT-Fs-fLz" id="6g0-lp-tGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6W-iT-10a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

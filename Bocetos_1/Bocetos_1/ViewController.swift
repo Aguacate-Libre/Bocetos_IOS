@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> OtroControlador? {
+        return OtroControlador(muro_texto: "Te gusta el jazz?~", de_quien: "Barry B. Benson", coder: coder)
+    }
 }
 

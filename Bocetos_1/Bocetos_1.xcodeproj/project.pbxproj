@@ -18,7 +18,7 @@
 		FB0EB67D2C9B2B5100C0F5D1 /* Bocetos_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EB67C2C9B2B5100C0F5D1 /* Bocetos_1UITestsLaunchTests.swift */; };
 		FB0EB68E2C9B364600C0F5D1 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EB68D2C9B364600C0F5D1 /* Cita.swift */; };
 		FB0EB6902C9B36E300C0F5D1 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EB68F2C9B36E300C0F5D1 /* generador_de_citas.swift */; };
-		FBF5E9A82C9DD96E00DBBAB2 /* ControladorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E9A72C9DD96E00DBBAB2 /* ControladorCita.swift */; };
+		FB6838222CA1C52800336473 /* OtroControlador.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6838212CA1C52800336473 /* OtroControlador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		FB0EB67C2C9B2B5100C0F5D1 /* Bocetos_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bocetos_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB0EB68D2C9B364600C0F5D1 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB0EB68F2C9B36E300C0F5D1 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
-		FBF5E9A72C9DD96E00DBBAB2 /* ControladorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCita.swift; sourceTree = "<group>"; };
+		FB6838212CA1C52800336473 /* OtroControlador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtroControlador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 		FBF5E9A62C9DD93600DBBAB2 /* ControladoresDeVistas */ = {
 			isa = PBXGroup;
 			children = (
-				FBF5E9A72C9DD96E00DBBAB2 /* ControladorCita.swift */,
+				FB6838212CA1C52800336473 /* OtroControlador.swift */,
 			);
 			path = ControladoresDeVistas;
 			sourceTree = "<group>";
@@ -293,10 +293,10 @@
 			files = (
 				FB0EB68E2C9B364600C0F5D1 /* Cita.swift in Sources */,
 				FB0EB65E2C9B2B5000C0F5D1 /* ViewController.swift in Sources */,
-				FBF5E9A82C9DD96E00DBBAB2 /* ControladorCita.swift in Sources */,
 				FB0EB6902C9B36E300C0F5D1 /* generador_de_citas.swift in Sources */,
 				FB0EB65A2C9B2B5000C0F5D1 /* AppDelegate.swift in Sources */,
 				FB0EB65C2C9B2B5000C0F5D1 /* SceneDelegate.swift in Sources */,
+				FB6838222CA1C52800336473 /* OtroControlador.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
