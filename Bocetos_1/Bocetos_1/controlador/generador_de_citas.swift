@@ -16,11 +16,32 @@ class GeneradorDeCitas
         citas_creadas = []
     }
     
-    func agregar_cita(_ que_dijo: String, quien_lo_dijo: String)
+    func agregar_cita(_ muro_de_texto: String, quien_lo_dijo: String)
     {
-        var cita_generada = Cita(quien_lo_dijo: quien_lo_dijo, que_dijo: que_dijo)
+        var cita_generada = Cita(quien_lo_dijo: quien_lo_dijo, muro_de_texto: muro_de_texto)
         
         citas_creadas.append(cita_generada)
+    }
+    
+    func generar_citas_falsas()
+    {
+        self.agregar_cita("¡Zumbando de alegría, recojo néctar para hacer la mejor miel!", quien_lo_dijo: "Larry A. Beja")
+        
+        self.agregar_cita("Siempre en equipo, ¡juntas somos más fuertes en la colmena!", quien_lo_dijo: "Danny Miel")
+        
+        self.agregar_cita("¿Vieron esa flor? ¡Es un buffet de polen delicioso!", quien_lo_dijo: "Andrea Colmena")
+        
+        self.agregar_cita("No subestimen el poder de una abeja: ¡polinizamos el mundo!", quien_lo_dijo: "Jorge Polen")
+        
+        self.agregar_cita("El trabajo nunca se detiene, pero siempre hay tiempo para un buen vuelo.", quien_lo_dijo: "Helen Flor")
+    }
+    
+    func obtener_citas_aleatorias() -> Cita
+    {
+        var cita_para_regresar: Cita
+        cita_para_regresar = citas_creadas[Int.random(in: 0...citas_creadas.count)]
+        
+        return cita_para_regresar
     }
 }
 

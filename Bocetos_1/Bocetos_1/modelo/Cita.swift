@@ -13,10 +13,10 @@ struct Cita
     
     var texto: String
     
-    init(quien_lo_dijo: String, que_dijo: String)
+    init(quien_lo_dijo: String, muro_de_texto: String)
     {
         nombre = quien_lo_dijo
-        texto = que_dijo
+        texto = muro_de_texto
     }
 }
 

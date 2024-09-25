@@ -13,24 +13,21 @@ class OtroControlador: UIViewController
     @IBOutlet weak var nombre_de_quien_lo_dijo: UILabel!
     @IBOutlet weak var que_dijo_muro_texto: UILabel!
     
-    var muro_de_texto: String
-    var quien_lo_dijo: String
-    
+    var cita_actual: Cita
+
     required init?(coder: NSCoder)
     {
-        self.muro_de_texto = ""
-        self.quien_lo_dijo = ""
+        self.cita_actual = Cita(quien_lo_dijo: "Desarrollador", muro_de_texto: "Tenemos un problema por una rebanada de pastel")
         
         super.init(coder: coder)
         print("Error: Se ha cargado el default de INIT")
     }
-    
-    init?(muro_texto: String, de_quien: String, coder: NSCoder)
+
+    init(cita_para_cita: Cita, coder: NSCoder)
     {
-        self.muro_de_texto = muro_texto
-        self.quien_lo_dijo = de_quien
-        
-        super.init(coder: coder)
+        print("Estamos aqui ")
+        self.cita_actual = cita_para_cita
+        super.init(coder: coder)!
     }
     
     override func viewDidLoad()
@@ -41,8 +38,8 @@ class OtroControlador: UIViewController
     
     func inicializar_pantalla()
     {
-        nombre_de_quien_lo_dijo.text = self.quien_lo_dijo
-        que_dijo_muro_texto.text = self.muro_de_texto
+        nombre_de_quien_lo_dijo.text = cita_actual.nombre
+        que_dijo_muro_texto.text = cita_actual.texto
     }
 }
 
