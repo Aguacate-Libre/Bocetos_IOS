@@ -19,6 +19,7 @@
 		FB0EB68E2C9B364600C0F5D1 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EB68D2C9B364600C0F5D1 /* Cita.swift */; };
 		FB0EB6902C9B36E300C0F5D1 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EB68F2C9B36E300C0F5D1 /* generador_de_citas.swift */; };
 		FB14C7652CA4749700B900A7 /* OtroControladorMas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14C7642CA4749700B900A7 /* OtroControladorMas.swift */; };
+		FB606FC52CA70E6000417F58 /* ControlGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB606FC42CA70E6000417F58 /* ControlGeneradorCita.swift */; };
 		FB6838222CA1C52800336473 /* OtroControlador.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6838212CA1C52800336473 /* OtroControlador.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		FB0EB68D2C9B364600C0F5D1 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB0EB68F2C9B36E300C0F5D1 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
 		FB14C7642CA4749700B900A7 /* OtroControladorMas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtroControladorMas.swift; sourceTree = "<group>"; };
+		FB606FC42CA70E6000417F58 /* ControlGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlGeneradorCita.swift; sourceTree = "<group>"; };
 		FB6838212CA1C52800336473 /* OtroControlador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtroControlador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 			children = (
 				FB6838212CA1C52800336473 /* OtroControlador.swift */,
 				FB14C7642CA4749700B900A7 /* OtroControladorMas.swift */,
+				FB606FC42CA70E6000417F58 /* ControlGeneradorCita.swift */,
 			);
 			path = ControladoresDeVistas;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FB0EB65A2C9B2B5000C0F5D1 /* AppDelegate.swift in Sources */,
 				FB14C7652CA4749700B900A7 /* OtroControladorMas.swift in Sources */,
 				FB0EB65C2C9B2B5000C0F5D1 /* SceneDelegate.swift in Sources */,
+				FB606FC52CA70E6000417F58 /* ControlGeneradorCita.swift in Sources */,
 				FB6838222CA1C52800336473 /* OtroControlador.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
