@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             
             else
             {
-                    citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
             }
         }
         

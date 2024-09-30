@@ -17,8 +17,17 @@ class ControlPantallaAgregarCita: UIViewController
     @IBOutlet weak var que_dijo_view: UITextField!
     @IBAction func agregar_cita_nueva(_ sender: Any)
     {
-        cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!,
-                           muro_de_texto: que_dijo_view.text!)
+        if (quien_lo_dijo_view.text != nil || que_dijo_view.text != nil)
+        {
+            cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!,
+                               muro_de_texto: que_dijo_view.text!)
+        }
+        
+        else
+        {
+            print("ERROR: No existe contedido para agregar")
+        }
+        
     }
     
     var cita_creada: Cita? = nil

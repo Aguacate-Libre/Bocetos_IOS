@@ -129,7 +129,7 @@
                                 <rect key="frame" x="76.666666666666686" y="657" width="240" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sZ-fh-DDV">
-                                        <rect key="frame" x="114" y="55" width="11" height="21"/>
+                                        <rect key="frame" x="114.33333333333333" y="54.666666666666629" width="11" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -374,6 +374,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="agregar_cita_nueva:" destination="4KM-Uu-10s" eventType="touchUpInside" id="v4f-TM-vot"/>
+                                    <segue destination="a53-mp-Eek" kind="unwind" unwindAction="volver_a_la_pantalla_inicioWithSegue:" id="vJP-R1-wEM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -414,7 +415,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jAY-ie-v1R"/>
                     <connections>
-                        <outlet property="Que_dijo_view" destination="McM-5m-hJe" id="9In-3b-TqY"/>
+                        <outlet property="que_dijo_view" destination="McM-5m-hJe" id="5gl-8X-ZLl"/>
                         <outlet property="quien_lo_dijo_view" destination="b2X-Lr-H4u" id="nCj-e0-rUx"/>
                     </connections>
                 </viewController>
