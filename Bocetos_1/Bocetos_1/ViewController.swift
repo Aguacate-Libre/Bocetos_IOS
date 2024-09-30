@@ -40,7 +40,15 @@ class ViewController: UIViewController {
         if let pantalla_agregar_citas = segue.source as?
                 ControlPantallaAgregarCita
         {
-            citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            if (pantalla_agregar_citas.cita_creada == nil)
+            {
+                print("ERROR: Campo Vacio")
+            }
+            
+            else
+            {
+                    citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            }
         }
         
         actualizar_cantidad()
