@@ -13,11 +13,13 @@ class ControlPantallaAgregarCita: UIViewController
     var quien_lo_dice: String = ""
     var que_dice: String = ""
     
+    
     @IBOutlet weak var quien_lo_dijo_view: UITextField!
     @IBOutlet weak var que_dijo_view: UITextField!
     @IBAction func agregar_cita_nueva(_ sender: Any)
     {
-        if (quien_lo_dijo_view.text != nil && que_dijo_view.text != nil)
+        if (quien_lo_dijo_view.text != "" && que_dijo_view.text != "")
+            
         {
             cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!,
                                muro_de_texto: que_dijo_view.text!)

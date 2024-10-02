@@ -415,8 +415,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="jAY-ie-v1R"/>
                     <connections>
-                        <outlet property="que_dijo_view" destination="McM-5m-hJe" id="5gl-8X-ZLl"/>
-                        <outlet property="quien_lo_dijo_view" destination="b2X-Lr-H4u" id="nCj-e0-rUx"/>
+                        <outlet property="que_dijo_view" destination="McM-5m-hJe" id="XwU-ab-hqz"/>
+                        <outlet property="quien_lo_dijo_view" destination="b2X-Lr-H4u" id="zEq-Fr-yh9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xy-ZZ-Kgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
