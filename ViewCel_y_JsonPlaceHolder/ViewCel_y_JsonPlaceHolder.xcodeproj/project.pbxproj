@@ -17,6 +17,7 @@
 		FB551B202CB433AF00077631 /* ViewCel_y_JsonPlaceHolderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB551B1F2CB433AF00077631 /* ViewCel_y_JsonPlaceHolderUITestsLaunchTests.swift */; };
 		FB551B2F2CB4376200077631 /* CollectionPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB551B2E2CB4376200077631 /* CollectionPantallaPrincipalDeColeccion.swift */; };
 		FB551B312CB43D2F00077631 /* VistaDeZelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB551B302CB43D2F00077631 /* VistaDeZelda.swift */; };
+		FBFE8B672CB6D8A100CC2E5F /* Comentarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE8B662CB6D8A100CC2E5F /* Comentarios.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FB551B1F2CB433AF00077631 /* ViewCel_y_JsonPlaceHolderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCel_y_JsonPlaceHolderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB551B2E2CB4376200077631 /* CollectionPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FB551B302CB43D2F00077631 /* VistaDeZelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeZelda.swift; sourceTree = "<group>"; };
+		FBFE8B662CB6D8A100CC2E5F /* Comentarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentarios.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		FB551AFB2CB433AE00077631 /* ViewCel_y_JsonPlaceHolder */ = {
 			isa = PBXGroup;
 			children = (
+				FBFE8B652CB6D7BB00CC2E5F /* Modelos */,
 				FB551B2C2CB4367D00077631 /* controladores_de_pantallas */,
 				FB551AFC2CB433AF00077631 /* AppDelegate.swift */,
 				FB551AFE2CB433AF00077631 /* SceneDelegate.swift */,
@@ -144,6 +147,14 @@
 				FB551B302CB43D2F00077631 /* VistaDeZelda.swift */,
 			);
 			path = vista_de_Zeldas;
+			sourceTree = "<group>";
+		};
+		FBFE8B652CB6D7BB00CC2E5F /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE8B662CB6D8A100CC2E5F /* Comentarios.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				FB551B2F2CB4376200077631 /* CollectionPantallaPrincipalDeColeccion.swift in Sources */,
 				FB551AFD2CB433AF00077631 /* AppDelegate.swift in Sources */,
 				FB551B312CB43D2F00077631 /* VistaDeZelda.swift in Sources */,
+				FBFE8B672CB6D8A100CC2E5F /* Comentarios.swift in Sources */,
 				FB551AFF2CB433AF00077631 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

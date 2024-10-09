@@ -7,12 +7,41 @@
 
 import UIKit
 
-private let identificador_de_Zelda = "celda_pantalla_principal"
+//private let identificador_de_Zelda = "celda_pantalla_principal"
 
 class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
-
+    private var lista_de_publicaciones: [Comentario] = []
+    private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
+    
+    private let identificador_de_Zelda = "celda_pantalla_principal"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ubicacion = URL(string: url_de_publicaciones)!
+        URLSession.shared.dataTask(with: ubicacion)
+        {
+            (datos, respuesta, error) in do
+            {
+                if let publicaciones_recibidas = datos
+                {
+                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
+                    DispatchQueue.main.async
+                    {
+                        self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
+                    }
+                }
+                else
+                {
+                    print("ERROR: no se recibio información")
+                }
+            }
+            catch
+            {
+                print("ERROR")
+            }
+        }.resume()
+        
+        print(lista_de_publicaciones)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
