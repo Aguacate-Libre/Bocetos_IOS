@@ -14,34 +14,39 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
     private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     
     private let identificador_de_Zelda = "celda_pantalla_principal"
+    private let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
+    @IBOutlet weak var outlet_a_la_vista: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let ubicacion = URL(string: url_de_publicaciones)!
-        URLSession.shared.dataTask(with: ubicacion)
         {
-            (datos, respuesta, error) in do
+            let ubicaion = URL(string: url_de_publicaciones)!
+            URLSession.shared.dataTask(with: ubicacion)
             {
-                if let publicaciones_recibidas = datos
+                (datos, respuesta, error) in do
                 {
-                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
-                    DispatchQueue.main.async
+                    if let publicaciones_recibidas = datos
                     {
+                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
+                        
                         self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
+                        
+                        
+                        DispatchQueue.main.async
+                        {
+                            self.collectionView.reloadData()
+                        }
+                    }
+                    else
+                    {
+                        print(respuesta)
                     }
                 }
-                else
+                catch
                 {
-                    print("ERROR: no se recibio información")
+                    print("ERROR")
                 }
             }
-            catch
-            {
-                print("ERROR")
-            }
         }.resume()
-        
-        print(lista_de_publicaciones)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -83,13 +88,20 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
         // Configure the cell
         zelda.backgroundColor = UIColor.green
         
-        zelda.etiqueta.text = "\(indexPath)"
+        zelda.etiqueta.text = self.lista_de_publicaciones[indexPath.item].title
+        zelda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body
     
         return zelda
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se selecciono la Zelda \(indexPath)")
+        
+        let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
+        
+        self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+        
+        print(self.navigationController)
     }
 
     // MARK: UICollectionViewDelegate
@@ -124,3 +136,5 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
     */
 
 }
+
+
