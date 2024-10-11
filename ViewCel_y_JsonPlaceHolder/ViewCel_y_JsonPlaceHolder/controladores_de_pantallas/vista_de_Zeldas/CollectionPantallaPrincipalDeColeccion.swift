@@ -14,7 +14,7 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
     private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     
     private let identificador_de_Zelda = "celda_pantalla_principal"
-    private let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
+    //private let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     @IBOutlet weak var outlet_a_la_vista: UICollectionView!
     override func viewDidLoad()
     {

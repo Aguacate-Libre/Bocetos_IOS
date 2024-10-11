@@ -51,15 +51,24 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-54-KOu">
+                                            <rect key="frame" x="42" y="8" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="jju-1X-JHu" firstAttribute="centerX" secondItem="Wu5-PC-AVV" secondAttribute="centerX" id="A9p-Z2-hBX"/>
+                                        <constraint firstItem="CVf-54-KOu" firstAttribute="top" secondItem="Wu5-PC-AVV" secondAttribute="top" constant="8" id="aQ9-0U-vnu"/>
+                                        <constraint firstItem="CVf-54-KOu" firstAttribute="centerX" secondItem="Wu5-PC-AVV" secondAttribute="centerX" id="kA1-Jx-LMx"/>
                                         <constraint firstItem="jju-1X-JHu" firstAttribute="centerY" secondItem="Wu5-PC-AVV" secondAttribute="centerY" id="kak-wh-Clu"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.057262348329999997" green="1" blue="0.053421399690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <outlet property="etiqueta" destination="jju-1X-JHu" id="a7r-f5-AfW"/>
+                                    <outlet property="cuerpo" destination="jju-1X-JHu" id="skf-oF-MBc"/>
+                                    <outlet property="etiqueta" destination="CVf-54-KOu" id="yLZ-Nj-mFk"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
