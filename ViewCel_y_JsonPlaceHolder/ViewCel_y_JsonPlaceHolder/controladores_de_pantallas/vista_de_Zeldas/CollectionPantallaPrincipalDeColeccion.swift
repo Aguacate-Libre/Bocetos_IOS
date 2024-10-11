@@ -16,46 +16,46 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
     private let identificador_de_Zelda = "celda_pantalla_principal"
     private let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     @IBOutlet weak var outlet_a_la_vista: UICollectionView!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
+        let ubicacion = URL(string: url_de_publicaciones)!
+        URLSession.shared.dataTask(with: ubicacion)
         {
-            let ubicaion = URL(string: url_de_publicaciones)!
-            URLSession.shared.dataTask(with: ubicacion)
+            (datos, respuesta, error) in do
             {
-                (datos, respuesta, error) in do
+                if let publicaciones_recibidas = datos
                 {
-                    if let publicaciones_recibidas = datos
+                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
+                    
+                    self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
+                    
+                    DispatchQueue.main.async
                     {
-                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
-                        
-                        self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
-                        
-                        
-                        DispatchQueue.main.async
-                        {
-                            self.collectionView.reloadData()
-                        }
-                    }
-                    else
-                    {
-                        print(respuesta)
+                        self.collectionView.reloadData()
                     }
                 }
-                catch
+                else
                 {
-                    print("ERROR")
+                    print(respuesta)
                 }
             }
+            catch
+            {
+                print("ERROR")
+            }
         }.resume()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: identificador_de_Zelda)
-
-        // Do any additional setup after loading the view.
     }
+    
+    // Uncomment the following line to preserve selection between presentations
+    // self.clearsSelectionOnViewWillAppear = false
+
+    // Register cell classes
+    // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: identificador_de_Zelda)
+
+    // Do any additional setup after loading the view.
+    
 
     /*
     // MARK: - Navigation
