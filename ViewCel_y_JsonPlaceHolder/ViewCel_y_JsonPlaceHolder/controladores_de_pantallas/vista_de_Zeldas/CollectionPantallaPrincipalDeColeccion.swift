@@ -71,13 +71,13 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
     
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 6 + 6
+        return lista_de_publicaciones.count
     }
 
     // Funcion para identificar y crear cada una de las celdas creadas en el Controller

@@ -14,7 +14,7 @@ extension CollectionPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLa
         var largo = self.collectionView.frame.height
         var ancho = self.collectionView.frame.width
         
-        ancho = ancho / 3.5
+        ancho = ancho / 1.0
         largo = ancho * 0.5
         
         return CGSize(width: ancho, height: largo)
@@ -30,16 +30,33 @@ extension CollectionPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLa
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 5
+        let ancho = self.collectionView.frame.width
+        var largo = self.collectionView.frame.width
+        largo = ancho * 0.1
+        
+        return largo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         var ancho = self.collectionView.frame.width
-        ancho = ancho % 3.5
+        ancho = ancho.truncatingRemainder(dividingBy: 1.0)
         
-        return 5
+        return ancho
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let collectionViewWidth = self.collectionView.frame.width
+        let collectionViewHeight =  self.collectionView.frame.height
+        
+        let cellWidth = (collectionViewWidth) / 1.1
+        let cellHeight = cellWidth * 0.5
+        
+        return CGSize(width: cellWidth , height: cellHeight)
+        
+    }
+    
 }
 
 /* extension CollectionPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
