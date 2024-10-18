@@ -9,7 +9,8 @@ import UIKit
 
 //private let identificador_de_Zelda = "celda_pantalla_principal"
 
-class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
+class CollectionPantallaPrincipalDeColeccion: UICollectionViewController
+{
     private var lista_de_publicaciones: [Comentario] = []
     private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     
@@ -45,7 +46,8 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
             {
                 print("ERROR")
             }
-        }.resume()
+        }
+        .resume()
     }
     
     // Uncomment the following line to preserve selection between presentations
@@ -98,6 +100,9 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController {
         print("Se selecciono la Zelda \(indexPath)")
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
+        
+        //pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
         
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
