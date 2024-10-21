@@ -1,15 +1,14 @@
 //
-//  Comentarios.swift
+//  Usuarios.swift
 //  ViewCel_y_JsonPlaceHolder
 //
 //  Created by alumno on 10/21/24.
 //
 
-struct Comentario: Codable
+struct Usuario: Codable
 {
-    var postId: Int
     var id: Int
     var name: String
+    var username: String
     var email: String
-    var bady: String
 }

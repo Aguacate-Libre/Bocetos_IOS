@@ -11,7 +11,7 @@ import UIKit
 
 class CollectionPantallaPrincipalDeColeccion: UICollectionViewController
 {
-    private var lista_de_publicaciones: [Comentario] = []
+    private var lista_de_publicaciones: [Publicacion] = []
     private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     
     private let identificador_de_Zelda = "celda_pantalla_principal"
@@ -28,7 +28,7 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController
             {
                 if let publicaciones_recibidas = datos
                 {
-                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Comentario].self, from: publicaciones_recibidas)
+                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Publicacion].self, from: publicaciones_recibidas)
                     
                     self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
                     
