@@ -88,7 +88,7 @@ class CollectionPantallaPrincipalDeColeccion: UICollectionViewController
         as! VistaDeZelda
     
         // Configure the cell
-        zelda.backgroundColor = UIColor.green
+        zelda.backgroundColor = UIColor.black
         
         zelda.etiqueta.text = self.lista_de_publicaciones[indexPath.item].title
         zelda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body

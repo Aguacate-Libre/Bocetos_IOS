@@ -11,5 +11,5 @@ struct Comentario: Codable
     var id: Int
     var name: String
     var email: String
-    var bady: String
+    var body: String
 }

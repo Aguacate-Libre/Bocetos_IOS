@@ -5,16 +5,18 @@
 //  Created by alumno on 10/11/24.
 //
 
-import Foundation
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController {
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
+    
+    private let identificador_de_Zelda = "CeldaComentario"
+    
     let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     
     @IBOutlet weak var titulo_de_publicacion: UILabel!
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
-    @IBOutlet var seccion_comentarios: [UICollectionView]!
+    @IBOutlet var seccion_comentarios: UICollectionView!
     
     public var id_publicacion: Int?
     private var publicacion: Publicacion?
@@ -26,6 +28,8 @@ class ControladorPantallaDelPost: UIViewController {
         
         let controlador_de_navegacion = self.navigationController as? mod_navegador_principal
         controlador_de_navegacion?.activar_navigation_bar(actviar: true)
+        
+        seccion_comentarios.dataSource = self
         
         realizar_descarga_de_informacion()
     }
@@ -41,6 +45,7 @@ class ControladorPantallaDelPost: UIViewController {
                     DispatchQueue.main.async
                     {
                         self?.dibujar_publicacion()
+                        self?.realizar_descarga_de_informacion()
                     }
             })
         }
@@ -53,7 +58,18 @@ class ControladorPantallaDelPost: UIViewController {
                     [weak self] (user) in self?.user = user
                     DispatchQueue.main.async
                     {
-                        self?.dibujar_publicacion()
+                        self?.dibujar_usuario()
+                        
+                    }
+            })
+            
+            proveedor_publicaciones.obtener_comentario(id: publicacion!.id,
+                que_hacer_al_recibir:
+                {
+                    [weak self] (comentarios_descargados) in self?.lista_comentarios = comentarios_descargados
+                    DispatchQueue.main.async
+                    {
+                        self?.seccion_comentarios.reloadData()
                     }
             })
         }
@@ -68,5 +84,27 @@ class ControladorPantallaDelPost: UIViewController {
         
         titulo_de_publicacion.text = publicacion_actual.title
         cuerpo_de_publicacion.text = publicacion_actual.body
+    }
+    
+    func dibujar_usuario()
+    {
+        guard let usuario_actual = self.user else
+        {
+            return
+        }
+        
+        nombre_de_usuario.text = usuario_actual.username
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return lista_comentarios.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        print("Aqui deberia hacer algo")
+        
+        let zelda = collectionView.dequeueReusableCell(withReuseIdentifier:identificador_de_Zelda, for: indexPath)
+        
+        return zelda
     }
 }
