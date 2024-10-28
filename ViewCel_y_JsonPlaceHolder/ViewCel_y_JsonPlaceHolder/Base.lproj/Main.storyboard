@@ -47,13 +47,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jju-1X-JHu">
-                                            <rect key="frame" x="144" y="54.000000000000007" width="41.333333333333343" height="20.333333333333336"/>
+                                            <rect key="frame" x="16" y="54.000000000000007" width="297" height="20.333333333333336"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="297" id="tI6-1J-uol"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.73172727479999999" green="1" blue="0.63186705450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-54-KOu">
-                                            <rect key="frame" x="144" y="7.9999999999999982" width="41.333333333333343" height="20.333333333333329"/>
+                                            <rect key="frame" x="16" y="7.9999999999999982" width="297" height="20.333333333333329"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="297" id="dug-Mt-HAq"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.057262348329999997" green="1" blue="0.053421399690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
