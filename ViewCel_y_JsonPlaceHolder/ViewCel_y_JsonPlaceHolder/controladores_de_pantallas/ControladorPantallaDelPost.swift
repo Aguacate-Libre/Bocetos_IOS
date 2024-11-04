@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     
     private let identificador_de_Zelda = "CeldaComentario"
     
@@ -16,11 +16,19 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
     @IBOutlet weak var titulo_de_publicacion: UILabel!
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
-    @IBOutlet var seccion_comentarios: UICollectionView!
+    private let seccion_comentarios: UICollectionView =
+    {
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = .init(width: 500, height: 200)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
+    }()
     
     public var id_publicacion: Int?
     private var publicacion: Publicacion?
     private var user: Usuario?
+    
     private var lista_comentarios: [Comentario] = []
     
     override func viewDidLoad() {
@@ -30,6 +38,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
         controlador_de_navegacion?.activar_navigation_bar(actviar: true)
         
         seccion_comentarios.dataSource = self
+        seccion_comentarios.backgroundColor = .black
         
         realizar_descarga_de_informacion()
     }
@@ -104,7 +113,10 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
         print("Aqui deberia hacer algo")
         
         let zelda = collectionView.dequeueReusableCell(withReuseIdentifier:identificador_de_Zelda, for: indexPath)
-        
+        zelda.backgroundColor = .darkGray
         return zelda
     }
+    
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
 }
