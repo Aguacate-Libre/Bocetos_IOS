@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB6DB5552CDE853F00388599 /* ControladorVistaGaleria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */; };
 		FBD531112CDBD8AE00B18609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531102CDBD8AE00B18609 /* AppDelegate.swift */; };
 		FBD531132CDBD8AE00B18609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531122CDBD8AE00B18609 /* SceneDelegate.swift */; };
 		FBD531152CDBD8AE00B18609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531142CDBD8AE00B18609 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorVistaGaleria.swift; sourceTree = "<group>"; };
 		FBD5310D2CDBD8AE00B18609 /* ProyectoFinalIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinalIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD531102CDBD8AE00B18609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD531122CDBD8AE00B18609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +78,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB6DB5522CDE850800388599 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DB5532CDE851900388599 /* VistaDeGaleria */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		FB6DB5532CDE851900388599 /* VistaDeGaleria */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */,
+			);
+			path = VistaDeGaleria;
+			sourceTree = "<group>";
+		};
 		FBD531042CDBD8AE00B18609 = {
 			isa = PBXGroup;
 			children = (
+				FB6DB5522CDE850800388599 /* Vistas */,
 				FBD5310F2CDBD8AE00B18609 /* ProyectoFinalIOS */,
 				FBD531262CDBD8AE00B18609 /* ProyectoFinalIOSTests */,
 				FBD531302CDBD8AF00B18609 /* ProyectoFinalIOSUITests */,
@@ -261,6 +280,7 @@
 				FBD531152CDBD8AE00B18609 /* ViewController.swift in Sources */,
 				FBD531112CDBD8AE00B18609 /* AppDelegate.swift in Sources */,
 				FBD531132CDBD8AE00B18609 /* SceneDelegate.swift in Sources */,
+				FB6DB5552CDE853F00388599 /* ControladorVistaGaleria.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
