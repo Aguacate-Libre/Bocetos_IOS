@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lore-->
+        <!--Historia-->
         <scene sceneID="NOI-Iw-2VW">
             <objects>
                 <navigationController id="G5s-Oh-0ZG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lore" image="book.pages.fill" catalog="system" id="zwk-KS-PsU"/>
+                    <tabBarItem key="tabBarItem" title="Historia" image="book.pages.fill" catalog="system" id="zwk-KS-PsU"/>
                     <navigationItem key="navigationItem" id="ZIB-uK-Vuz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="05E-Pp-v8f">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -70,7 +70,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
             </objects>
             <point key="canvasLocation" x="-927.48091603053433" y="-673.23943661971839"/>
         </scene>
-        <!--Gallery-->
+        <!--Galeria-->
         <scene sceneID="duv-CR-FeL">
             <objects>
                 <collectionViewController id="ZHX-j0-MUu" sceneMemberID="viewController">
@@ -100,51 +100,89 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                             <outlet property="delegate" destination="ZHX-j0-MUu" id="8u6-Om-eyY"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Gallery" image="photo.stack.fill" catalog="system" id="Ch7-Hz-oLC"/>
+                    <tabBarItem key="tabBarItem" title="Galeria" image="photo.stack.fill" catalog="system" id="Ch7-Hz-oLC"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JL5-Y5-0St" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2660" y="-673"/>
         </scene>
-        <!--Contents-->
-        <scene sceneID="qea-tf-gWJ">
+        <!--Contenidos-->
+        <scene sceneID="nRu-30-36L">
             <objects>
-                <tableViewController id="57o-Eo-xqn" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9mM-Az-9nG">
+                <collectionViewController id="NYD-bj-8Mm" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="o2a-SD-ICs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contenidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SaB-QU-7NR">
-                            <rect key="frame" x="0.0" y="121.66666793823242" width="393" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1YB-xE-m14">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1YB-xE-m14" id="RhV-Sm-o9F">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kw2-9o-Dqk">
+                            <size key="itemSize" width="393" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wb5-Ae-3hC" customClass="ControladorVistaContenidos" customModule="ProyectoFinalIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gx8-Qx-qrb">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableViewCell>
-                        </prototypes>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-hV-9H8">
+                                            <rect key="frame" x="26" y="27" width="62" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-jF-igI">
+                                            <rect key="frame" x="31" y="73" width="52" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Yb-ymm">
+                                            <rect key="frame" x="274" y="8.6666666666666714" width="111" height="111"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="111" id="3d1-Pw-olS"/>
+                                                <constraint firstAttribute="height" constant="111" id="p2I-gc-Qra"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SK-q7-EY4">
+                                            <rect key="frame" x="163" y="72" width="34" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="leading" secondItem="I38-jF-igI" secondAttribute="trailing" constant="80" id="95g-31-csT"/>
+                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="EXf-qh-RHA"/>
+                                        <constraint firstAttribute="bottom" secondItem="I38-jF-igI" secondAttribute="bottom" constant="34" id="OzC-v9-6rM"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="centerY" secondItem="Gx8-Qx-qrb" secondAttribute="centerY" id="RBF-QX-ssh"/>
+                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="top" secondItem="Gx8-Qx-qrb" secondAttribute="top" constant="27" id="aQz-4k-sct"/>
+                                        <constraint firstItem="I38-jF-igI" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="31" id="aWs-bt-J8P"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="leading" secondItem="6SK-q7-EY4" secondAttribute="trailing" constant="77" id="kCa-eE-Zdp"/>
+                                        <constraint firstAttribute="bottom" secondItem="6SK-q7-EY4" secondAttribute="bottom" constant="35" id="mtf-Na-bwi"/>
+                                        <constraint firstAttribute="trailing" secondItem="hom-Yb-ymm" secondAttribute="trailing" constant="8" id="uPK-wp-NK8"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="customSize" width="393" height="128"/>
+                                <connections>
+                                    <outlet property="nombre" destination="H4b-hV-9H8" id="Ana-a1-c8B"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
                         <connections>
-                            <outlet property="dataSource" destination="57o-Eo-xqn" id="NKO-Qq-Xbq"/>
-                            <outlet property="delegate" destination="57o-Eo-xqn" id="PYS-i5-aX7"/>
+                            <outlet property="dataSource" destination="NYD-bj-8Mm" id="25E-m3-Rn7"/>
+                            <outlet property="delegate" destination="NYD-bj-8Mm" id="XgZ-pM-ps8"/>
                         </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Contents" image="tablecells.fill" catalog="system" id="KcM-hb-kdV"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2If-jd-IkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Contenidos" selectedImage="tablecells.fill" catalog="system" id="nvl-lU-0Nc"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U5-i5-mDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2660" y="63"/>
+            <point key="canvasLocation" x="-2660.3053435114502" y="18.30985915492958"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JVI-66-CNA">
@@ -160,7 +198,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                         <segue destination="u1f-wf-Pw6" kind="relationship" relationship="viewControllers" id="Fi4-3v-s7F"/>
                         <segue destination="G5s-Oh-0ZG" kind="relationship" relationship="viewControllers" id="thJ-1r-O21"/>
                         <segue destination="ZHX-j0-MUu" kind="relationship" relationship="viewControllers" id="EU8-e2-rXK"/>
-                        <segue destination="57o-Eo-xqn" kind="relationship" relationship="viewControllers" id="nhJ-RL-H5q"/>
+                        <segue destination="NYD-bj-8Mm" kind="relationship" relationship="viewControllers" id="xau-7X-v0O"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuP-Ur-THu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +241,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
         <image name="photo.stack.fill" catalog="system" width="126" height="128"/>
         <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
