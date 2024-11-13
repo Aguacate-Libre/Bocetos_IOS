@@ -6,15 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 public struct Dragon
 {
     var nombre: String
     var tipo: String
     var origen: String
-    var imagen: String
+    var imagen: UIImage
 
-    init(_ nombre: String, como_se_ve: String, de_deonde_viene: String, retrato: String)
+    init(_ nombre: String, como_se_ve: String, de_deonde_viene: String, retrato: UIImage)
     {
         self.nombre = nombre
         tipo = como_se_ve
@@ -25,10 +26,10 @@ public struct Dragon
 }
 
 public let Dragones = [
-    Dragon("Dragon1", como_se_ve: "rojo", de_deonde_viene: "Fantasia", retrato: "Red-dragon"),
-    Dragon("Dragon2", como_se_ve: "azul", de_deonde_viene: "Rusia", retrato: "Blue-dragon"),
-    Dragon("Dragon3", como_se_ve: "verde", de_deonde_viene: "Brazil", retrato: "Green-dragon"),
-    Dragon("Dragon4", como_se_ve: "negro", de_deonde_viene: "Mito", retrato: "Black-dragon"),
-    Dragon("Dragon5", como_se_ve: "blanco", de_deonde_viene: "Leyenda", retrato: "White-dragon")
+    Dragon("Dragon1", como_se_ve: "rojo", de_deonde_viene: "Fantasia", retrato: UIImage.redDragon),
+    Dragon("Dragon2", como_se_ve: "azul", de_deonde_viene: "Rusia", retrato: UIImage.blueDragon),
+    Dragon("Dragon3", como_se_ve: "verde", de_deonde_viene: "Brazil", retrato: UIImage.greenDragon),
+    Dragon("Dragon4", como_se_ve: "negro", de_deonde_viene: "Mito", retrato: UIImage.blackDragon),
+    Dragon("Dragon5", como_se_ve: "blanco", de_deonde_viene: "Leyenda", retrato: UIImage.whiteDragon)
 ]
 

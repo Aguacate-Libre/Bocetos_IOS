@@ -19,6 +19,8 @@
 		FBD531282CDBD8AE00B18609 /* ProyectoFinalIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531272CDBD8AE00B18609 /* ProyectoFinalIOSTests.swift */; };
 		FBD531322CDBD8AF00B18609 /* ProyectoFinalIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531312CDBD8AF00B18609 /* ProyectoFinalIOSUITests.swift */; };
 		FBD531342CDBD8AF00B18609 /* ProyectoFinalIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531332CDBD8AF00B18609 /* ProyectoFinalIOSUITestsLaunchTests.swift */; };
+		FBE53EA22CE50BA7009E9C41 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE53EA12CE50BA7009E9C41 /* VistaDeCelda.swift */; };
+		FBE53EA52CE513CA009E9C41 /* EstiloDeCeldasDeContenidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE53EA42CE513CA009E9C41 /* EstiloDeCeldasDeContenidos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		FBD5312D2CDBD8AF00B18609 /* ProyectoFinalIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinalIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD531312CDBD8AF00B18609 /* ProyectoFinalIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalIOSUITests.swift; sourceTree = "<group>"; };
 		FBD531332CDBD8AF00B18609 /* ProyectoFinalIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBE53EA12CE50BA7009E9C41 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FBE53EA42CE513CA009E9C41 /* EstiloDeCeldasDeContenidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloDeCeldasDeContenidos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		FB44282A2CE26BC300D0C01B /* Controlador */ = {
 			isa = PBXGroup;
 			children = (
+				FBE53EA32CE513B3009E9C41 /* Estilos */,
 			);
 			path = Controlador;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			children = (
 				FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */,
 				FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */,
+				FBE53EA12CE50BA7009E9C41 /* VistaDeCelda.swift */,
 			);
 			path = VistaDeGaleria;
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 				FBD531332CDBD8AF00B18609 /* ProyectoFinalIOSUITestsLaunchTests.swift */,
 			);
 			path = ProyectoFinalIOSUITests;
+			sourceTree = "<group>";
+		};
+		FBE53EA32CE513B3009E9C41 /* Estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FBE53EA42CE513CA009E9C41 /* EstiloDeCeldasDeContenidos.swift */,
+			);
+			path = Estilos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +318,8 @@
 				FBD531112CDBD8AE00B18609 /* AppDelegate.swift in Sources */,
 				FB4428292CE265F900D0C01B /* DatosDragones.swift in Sources */,
 				FBD531132CDBD8AE00B18609 /* SceneDelegate.swift in Sources */,
+				FBE53EA22CE50BA7009E9C41 /* VistaDeCelda.swift in Sources */,
+				FBE53EA52CE513CA009E9C41 /* EstiloDeCeldasDeContenidos.swift in Sources */,
 				FB6DB5552CDE853F00388599 /* ControladorVistaGaleria.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
