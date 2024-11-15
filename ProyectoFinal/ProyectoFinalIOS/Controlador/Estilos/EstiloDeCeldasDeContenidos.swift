@@ -21,13 +21,6 @@ extension ControladorVistaContenidos: UICollectionViewDelegateFlowLayout
         return CGSize(width: ancho, height: alto)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collactionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
-    {
-        var margen = CGFloat(10)
-        
-        return UIEdgeInsets(top: margen, left: margen, bottom: margen, right: margen)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
         var alto = self.collectionView.frame.width

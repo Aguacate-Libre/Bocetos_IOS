@@ -85,14 +85,26 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaReutilizable" id="kXU-bs-pOZ">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaReutilizable" id="kXU-bs-pOZ" customClass="VistaCeldaGaleria" customModule="ProyectoFinalIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Itm-vK-zB1">
                                     <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-Xq-P1w">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="centerY" secondItem="Itm-vK-zB1" secondAttribute="centerY" id="MSO-GV-dJo"/>
+                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="centerX" secondItem="Itm-vK-zB1" secondAttribute="centerX" id="cJc-3G-odV"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="Imagen" destination="Itm-vK-zB1" id="Fyy-bb-AvO"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -104,7 +116,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JL5-Y5-0St" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2660" y="-673"/>
+            <point key="canvasLocation" x="-2660.3053435114502" y="-673.23943661971839"/>
         </scene>
         <!--Contenidos-->
         <scene sceneID="nRu-30-36L">
