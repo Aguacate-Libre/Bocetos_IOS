@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FB4428292CE265F900D0C01B /* DatosDragones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4428282CE265F900D0C01B /* DatosDragones.swift */; };
 		FB44282E2CE2774C00D0C01B /* ControladorVistaContenidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */; };
+		FB531C092CE7B23F005904A2 /* DRAGON_HUNTER.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB531C082CE7B23F005904A2 /* DRAGON_HUNTER.otf */; };
+		FB531C0B2CE7B3E3005904A2 /* Dragon_FREE.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB531C0A2CE7B3E3005904A2 /* Dragon_FREE.otf */; };
 		FB6DB5552CDE853F00388599 /* ControladorVistaGaleria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */; };
 		FBD531112CDBD8AE00B18609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531102CDBD8AE00B18609 /* AppDelegate.swift */; };
 		FBD531132CDBD8AE00B18609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD531122CDBD8AE00B18609 /* SceneDelegate.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		FB4428282CE265F900D0C01B /* DatosDragones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosDragones.swift; sourceTree = "<group>"; };
 		FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorVistaContenidos.swift; sourceTree = "<group>"; };
+		FB531C082CE7B23F005904A2 /* DRAGON_HUNTER.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DRAGON_HUNTER.otf; path = ../../../../../Downloads/dragon_hunter/DRAGON_HUNTER.otf; sourceTree = "<group>"; };
+		FB531C0A2CE7B3E3005904A2 /* Dragon_FREE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dragon_FREE.otf; path = ../../../../../Downloads/dragon_3/Dragon_FREE.otf; sourceTree = "<group>"; };
 		FB6DB5542CDE853F00388599 /* ControladorVistaGaleria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorVistaGaleria.swift; sourceTree = "<group>"; };
 		FBD5310D2CDBD8AE00B18609 /* ProyectoFinalIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinalIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD531102CDBD8AE00B18609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 			path = Controlador;
 			sourceTree = "<group>";
 		};
+		FB531C032CE7A83E005904A2 /* Fuentes */ = {
+			isa = PBXGroup;
+			children = (
+				FB531C082CE7B23F005904A2 /* DRAGON_HUNTER.otf */,
+				FB531C0A2CE7B3E3005904A2 /* Dragon_FREE.otf */,
+			);
+			path = Fuentes;
+			sourceTree = "<group>";
+		};
 		FB6DB5522CDE850800388599 /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +136,7 @@
 		FBD531042CDBD8AE00B18609 = {
 			isa = PBXGroup;
 			children = (
+				FB531C032CE7A83E005904A2 /* Fuentes */,
 				FB44282A2CE26BC300D0C01B /* Controlador */,
 				FB4428262CE265CA00D0C01B /* Modelos */,
 				FB6DB5522CDE850800388599 /* Vistas */,
@@ -286,7 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB531C0B2CE7B3E3005904A2 /* Dragon_FREE.otf in Resources */,
 				FBD5311A2CDBD8AE00B18609 /* Assets.xcassets in Resources */,
+				FB531C092CE7B23F005904A2 /* DRAGON_HUNTER.otf in Resources */,
 				FBD5311D2CDBD8AE00B18609 /* Base in Resources */,
 				FBD531182CDBD8AE00B18609 /* Base in Resources */,
 			);

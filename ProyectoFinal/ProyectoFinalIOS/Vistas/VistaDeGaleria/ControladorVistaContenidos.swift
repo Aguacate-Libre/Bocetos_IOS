@@ -10,7 +10,7 @@ import UIKit
 
 class ControladorVistaContenidos : UICollectionViewController
 {
-    private var lista_de_dragones: [Dragon] = []
+    private var lista_de_dragones: [Dragon] = Dragones
     private let identificador_de_celda = "celda_pantalla_principal"
     private var dragon: Dragon?
     public var id_dragon: Int?
@@ -23,6 +23,7 @@ class ControladorVistaContenidos : UICollectionViewController
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
+        print("\(lista_de_dragones.count)z----z---z")
         return lista_de_dragones.count
     }
     

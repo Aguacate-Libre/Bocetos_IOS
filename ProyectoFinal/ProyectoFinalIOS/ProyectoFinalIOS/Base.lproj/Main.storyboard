@@ -48,7 +48,7 @@
 
 Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especies y subespecies de los mismos.</string>
                                 <color key="textColor" red="0.47943383140551604" green="0.81797406462585032" blue="0.72305574478120083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Dragon_FREE" family="Dragon_FREE" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -115,17 +115,17 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kw2-9o-Dqk">
-                            <size key="itemSize" width="393" height="128"/>
+                            <size key="itemSize" width="393" height="182"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wb5-Ae-3hC" customClass="VistaDeCelda" customModule="ProyectoFinalIOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="Wb5-Ae-3hC" customClass="VistaDeCelda" customModule="ProyectoFinalIOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gx8-Qx-qrb">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-hV-9H8">
@@ -138,7 +138,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-jF-igI">
-                                            <rect key="frame" x="31" y="73" width="89" height="21"/>
+                                            <rect key="frame" x="26" y="81" width="89" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="89" id="tWt-9K-HuN"/>
                                             </constraints>
@@ -146,36 +146,36 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                                             <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Yb-ymm">
-                                            <rect key="frame" x="274" y="8.6666666666666714" width="111" height="111"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Yb-ymm">
+                                            <rect key="frame" x="223" y="27" width="144" height="125"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="111" id="3d1-Pw-olS"/>
-                                                <constraint firstAttribute="height" constant="111" id="p2I-gc-Qra"/>
+                                                <constraint firstAttribute="height" constant="144" id="bDz-vj-yNv"/>
+                                                <constraint firstAttribute="width" constant="144" id="z9I-Dx-lCM"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SK-q7-EY4">
-                                            <rect key="frame" x="163" y="72" width="103" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="103" id="n7u-Id-BgX"/>
-                                            </constraints>
+                                            <rect key="frame" x="25.999999999999996" y="131" width="33.666666666666657" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="I38-jF-igI" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="6bC-Fy-0eY"/>
                                         <constraint firstItem="H4b-hV-9H8" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="EXf-qh-RHA"/>
-                                        <constraint firstAttribute="bottom" secondItem="I38-jF-igI" secondAttribute="bottom" constant="34" id="OzC-v9-6rM"/>
-                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="centerY" secondItem="Gx8-Qx-qrb" secondAttribute="centerY" id="RBF-QX-ssh"/>
+                                        <constraint firstAttribute="bottom" secondItem="hom-Yb-ymm" secondAttribute="bottom" constant="30" id="Fao-40-bK7"/>
+                                        <constraint firstAttribute="trailing" secondItem="hom-Yb-ymm" secondAttribute="trailing" constant="26" id="KMf-4w-TFP"/>
+                                        <constraint firstItem="I38-jF-igI" firstAttribute="top" secondItem="H4b-hV-9H8" secondAttribute="bottom" constant="33" id="MfC-a7-xGc"/>
+                                        <constraint firstAttribute="bottom" secondItem="6SK-q7-EY4" secondAttribute="bottom" constant="30" id="V8d-Ag-7zf"/>
                                         <constraint firstItem="H4b-hV-9H8" firstAttribute="top" secondItem="Gx8-Qx-qrb" secondAttribute="top" constant="27" id="aQz-4k-sct"/>
-                                        <constraint firstItem="I38-jF-igI" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="31" id="aWs-bt-J8P"/>
-                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="leading" secondItem="I38-jF-igI" secondAttribute="trailing" constant="43" id="l0P-X9-5NS"/>
-                                        <constraint firstAttribute="bottom" secondItem="6SK-q7-EY4" secondAttribute="bottom" constant="35" id="mtf-Na-bwi"/>
-                                        <constraint firstAttribute="trailing" secondItem="hom-Yb-ymm" secondAttribute="trailing" constant="8" id="uPK-wp-NK8"/>
+                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="cdQ-zi-ara"/>
+                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="top" secondItem="I38-jF-igI" secondAttribute="bottom" constant="29" id="ePf-vv-xdc"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="leading" secondItem="I38-jF-igI" secondAttribute="trailing" constant="108" id="fyG-5L-sDU"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="top" secondItem="Gx8-Qx-qrb" secondAttribute="top" constant="27" id="z3F-JO-Kap"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="customSize" width="393" height="128"/>
+                                <size key="customSize" width="393" height="182"/>
                                 <connections>
                                     <outlet property="como_se_ve" destination="6SK-q7-EY4" id="ufa-ee-6sr"/>
                                     <outlet property="de_deonde_viene" destination="I38-jF-igI" id="a2P-95-xbm"/>
