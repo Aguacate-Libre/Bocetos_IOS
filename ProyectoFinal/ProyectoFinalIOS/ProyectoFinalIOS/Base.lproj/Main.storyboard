@@ -73,37 +73,43 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
         <!--Galeria-->
         <scene sceneID="duv-CR-FeL">
             <objects>
-                <collectionViewController id="ZHX-j0-MUu" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="pantalla_de_galeria" id="ZHX-j0-MUu" customClass="ControladorVistaGaleria" customModule="ProyectoFinalIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NJU-M7-9wo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dsA-CN-WS5">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dsA-CN-WS5">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaReutilizable" id="kXU-bs-pOZ" customClass="VistaCeldaGaleria" customModule="ProyectoFinalIOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_galeria" id="kXU-bs-pOZ" customClass="VistaCeldaGaleria" customModule="ProyectoFinalIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Itm-vK-zB1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cz8-4z-o75">
                                     <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-Xq-P1w">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-Xq-P1w">
+                                            <rect key="frame" x="8" y="8" width="112" height="112"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="112" id="LXK-QU-K8b"/>
+                                                <constraint firstAttribute="height" constant="112" id="b5V-na-4At"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="centerY" secondItem="Itm-vK-zB1" secondAttribute="centerY" id="MSO-GV-dJo"/>
-                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="centerX" secondItem="Itm-vK-zB1" secondAttribute="centerX" id="cJc-3G-odV"/>
+                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="leading" secondItem="cz8-4z-o75" secondAttribute="leading" constant="8" id="0QG-ZN-W4u"/>
+                                        <constraint firstAttribute="bottom" secondItem="lMc-Xq-P1w" secondAttribute="bottom" constant="8" id="2Lb-e4-mEH"/>
+                                        <constraint firstAttribute="trailing" secondItem="lMc-Xq-P1w" secondAttribute="trailing" constant="8" id="4Ui-0I-MOK"/>
+                                        <constraint firstItem="lMc-Xq-P1w" firstAttribute="top" secondItem="cz8-4z-o75" secondAttribute="top" constant="8" id="x0j-m7-sGU"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <connections>
-                                    <outlet property="Imagen" destination="Itm-vK-zB1" id="Fyy-bb-AvO"/>
+                                    <outlet property="Imagen" destination="lMc-Xq-P1w" id="mVg-lL-mjn"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -145,7 +151,7 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="fEW-Pu-an8"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="17"/>
                                             <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -236,8 +242,15 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Historia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-0m-6uH">
-                                <rect key="frame" x="175" y="416" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-0m-6uH">
+                                <rect key="frame" x="8" y="111" width="377" height="650"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="650" id="IVB-mx-H8H"/>
+                                    <constraint firstAttribute="width" constant="377" id="dt5-hc-hva"/>
+                                </constraints>
+                                <string key="text">Los dragones aparecen en casi todas las culturas de la Tierra. Algunos investigadores sugieren que nacen de nuestros miedos más primarios (una mezcla aterradora de garras afiladas, escamas impenetrables y dientes puntiagudos) que los primeros humanos utilizaban para enseñarse unos a otros los peligros del mundo.
+
+Estas criaturas míticas han cautivado la imaginación humana durante siglos, tejiendo su camino en el folclore, la literatura y el arte de todos los continentes. Pero, ¿por qué estos antiguos mitos siguen teniendo tanto poder sobre nosotros? He aquí seis leyendas épicas que demuestran por qué los dragones siguen encendiendo nuestra imaginación.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -246,8 +259,10 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TKS-0m-6uH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ByW-Mo-UkC"/>
-                            <constraint firstItem="TKS-0m-6uH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="I2h-0i-e4D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TKS-0m-6uH" secondAttribute="bottom" constant="8" id="m1b-BE-jCu"/>
+                            <constraint firstItem="TKS-0m-6uH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="t3Y-eA-jF8"/>
+                            <constraint firstItem="TKS-0m-6uH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="xsI-7g-KJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TKS-0m-6uH" secondAttribute="trailing" constant="8" id="zSH-v1-CCY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cMP-i8-lSl"/>

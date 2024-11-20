@@ -10,5 +10,5 @@ import UIKit
 
 class VistaCeldaGaleria: UICollectionViewCell
 {
-    @IBOutlet weak var Imagen: UIView!
+    @IBOutlet weak var Imagen: UIImageView!
 }
