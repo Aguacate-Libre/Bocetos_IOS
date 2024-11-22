@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB4428292CE265F900D0C01B /* DatosDragones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4428282CE265F900D0C01B /* DatosDragones.swift */; };
 		FB44282E2CE2774C00D0C01B /* ControladorVistaContenidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */; };
+		FB44900C2CF0F6DA005CC032 /* ControladorVistaDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB44900B2CF0F6DA005CC032 /* ControladorVistaDatos.swift */; };
 		FB531C092CE7B23F005904A2 /* DRAGON_HUNTER.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB531C082CE7B23F005904A2 /* DRAGON_HUNTER.otf */; };
 		FB531C0B2CE7B3E3005904A2 /* Dragon_FREE.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB531C0A2CE7B3E3005904A2 /* Dragon_FREE.otf */; };
 		FB531C0D2CE7BB97005904A2 /* EstiloDeCeldasDeGaleria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB531C0C2CE7BB97005904A2 /* EstiloDeCeldasDeGaleria.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		FB4428282CE265F900D0C01B /* DatosDragones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosDragones.swift; sourceTree = "<group>"; };
 		FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorVistaContenidos.swift; sourceTree = "<group>"; };
+		FB44900B2CF0F6DA005CC032 /* ControladorVistaDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorVistaDatos.swift; sourceTree = "<group>"; };
 		FB531C082CE7B23F005904A2 /* DRAGON_HUNTER.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DRAGON_HUNTER.otf; path = ../../../../../Downloads/dragon_hunter/DRAGON_HUNTER.otf; sourceTree = "<group>"; };
 		FB531C0A2CE7B3E3005904A2 /* Dragon_FREE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dragon_FREE.otf; path = ../../../../../Downloads/dragon_3/Dragon_FREE.otf; sourceTree = "<group>"; };
 		FB531C0C2CE7BB97005904A2 /* EstiloDeCeldasDeGaleria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloDeCeldasDeGaleria.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				FB44282D2CE2774C00D0C01B /* ControladorVistaContenidos.swift */,
 				FBE53EA12CE50BA7009E9C41 /* VistaDeCelda.swift */,
 				FB531C0E2CE7BD0F005904A2 /* VistaCeldaGaleria.swift */,
+				FB44900B2CF0F6DA005CC032 /* ControladorVistaDatos.swift */,
 			);
 			path = VistaDeGaleria;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB44282E2CE2774C00D0C01B /* ControladorVistaContenidos.swift in Sources */,
+				FB44900C2CF0F6DA005CC032 /* ControladorVistaDatos.swift in Sources */,
 				FBD531152CDBD8AE00B18609 /* ViewController.swift in Sources */,
 				FBD531112CDBD8AE00B18609 /* AppDelegate.swift in Sources */,
 				FB4428292CE265F900D0C01B /* DatosDragones.swift in Sources */,

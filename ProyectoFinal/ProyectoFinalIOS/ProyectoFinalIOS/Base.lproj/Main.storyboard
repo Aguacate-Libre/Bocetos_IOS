@@ -77,6 +77,64 @@
             </objects>
             <point key="canvasLocation" x="-927.48091603053433" y="-673.23943661971839"/>
         </scene>
+        <!--Controlador Vista Datos-->
+        <scene sceneID="IQB-Iu-Ryl">
+            <objects>
+                <viewController id="iew-2i-KOx" customClass="ControladorVistaDatos" customModule="ProyectoFinalIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AoD-dQ-rQs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickWall@4x-100" id="ilB-X3-GRe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="EhY-WO-95u"/>
+                                    <constraint firstAttribute="height" constant="852" id="oJJ-TS-7fz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmg-gV-9kk">
+                                <rect key="frame" x="16" y="172" width="361" height="20.333333333333343"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="W36-z9-jmt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="x9O-qm-W3B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h7-PL-9KB">
+                                <rect key="frame" x="0.0" y="89" width="393" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0ep-M0-JCO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="24"/>
+                                <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5jj-r6-HrU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jmg-gV-9kk" firstAttribute="leading" secondItem="5jj-r6-HrU" secondAttribute="leading" constant="16" id="BFF-gR-9Ls"/>
+                            <constraint firstItem="5jj-r6-HrU" firstAttribute="trailing" secondItem="jmg-gV-9kk" secondAttribute="trailing" constant="16" id="DkJ-Ym-eo2"/>
+                            <constraint firstItem="1h7-PL-9KB" firstAttribute="leading" secondItem="5jj-r6-HrU" secondAttribute="leading" id="S2f-Ea-JaO"/>
+                            <constraint firstItem="jmg-gV-9kk" firstAttribute="top" secondItem="1h7-PL-9KB" secondAttribute="bottom" constant="23" id="a2E-ZJ-hA0"/>
+                            <constraint firstItem="1h7-PL-9KB" firstAttribute="top" secondItem="5jj-r6-HrU" secondAttribute="top" constant="30" id="s5N-1k-8L1"/>
+                            <constraint firstItem="1h7-PL-9KB" firstAttribute="trailing" secondItem="5jj-r6-HrU" secondAttribute="trailing" id="xrj-tS-SOh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Nombre_seleccionado" destination="1h7-PL-9KB" id="AFO-md-mHL"/>
+                        <outlet property="datos_seleccionado" destination="jmg-gV-9kk" id="F8q-39-Vqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjZ-xQ-NkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3619.0839694656488" y="-673.23943661971839"/>
+        </scene>
         <!--Galeria-->
         <scene sceneID="duv-CR-FeL">
             <objects>
@@ -356,6 +414,9 @@ En Baviera, por ejemplo, el drama de la muerte del drag√≥n se representaba el d√
         <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
