@@ -35,32 +35,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickWall@4x-100" translatesAutoresizingMaskIntoConstraints="NO" id="Yqb-mN-XKP">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="ZFm-Ed-A5p"/>
+                                    <constraint firstAttribute="height" constant="852" id="zPb-Ch-vJs"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dragons Logo@4x-100" translatesAutoresizingMaskIntoConstraints="NO" id="eBL-tI-pfg">
                                 <rect key="frame" x="0.0" y="59" width="393" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="vc1-bG-hPL"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nmC-Ig-xIl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Texto Inicio@4x-100" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-3d-v6o">
                                 <rect key="frame" x="0.0" y="395" width="393" height="340"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">En esta aplicacion, podras ver la historia de los dragones tanto alrededor de mundo real y de fantasia.
-
-Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especies y subespecies de los mismos.</string>
-                                <color key="textColor" red="0.47943383140551604" green="0.81797406462585032" blue="0.72305574478120083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Dragon_FREE" family="Dragon_FREE" pointSize="27"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="lfN-DD-Rdc"/>
+                                    <constraint firstAttribute="height" constant="340" id="vph-gS-Jh0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8cB-oR-gsj"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Yqb-mN-XKP" firstAttribute="leading" secondItem="8cB-oR-gsj" secondAttribute="leading" id="2EX-Q5-oci"/>
                             <constraint firstItem="eBL-tI-pfg" firstAttribute="top" secondItem="8cB-oR-gsj" secondAttribute="top" id="6Md-JX-3GH"/>
-                            <constraint firstItem="8cB-oR-gsj" firstAttribute="trailing" secondItem="nmC-Ig-xIl" secondAttribute="trailing" id="7eo-53-PkD"/>
-                            <constraint firstItem="8cB-oR-gsj" firstAttribute="bottom" secondItem="nmC-Ig-xIl" secondAttribute="bottom" constant="34" id="D9X-S8-9g3"/>
-                            <constraint firstItem="nmC-Ig-xIl" firstAttribute="leading" secondItem="8cB-oR-gsj" secondAttribute="leading" id="Fp4-AJ-py6"/>
-                            <constraint firstItem="nmC-Ig-xIl" firstAttribute="top" secondItem="eBL-tI-pfg" secondAttribute="bottom" constant="36" id="IZu-BJ-4At"/>
+                            <constraint firstAttribute="bottom" secondItem="Yqb-mN-XKP" secondAttribute="bottom" id="CZd-eV-YX9"/>
+                            <constraint firstItem="8cB-oR-gsj" firstAttribute="bottom" secondItem="tiK-3d-v6o" secondAttribute="bottom" constant="34" id="Crn-Tb-x9p"/>
+                            <constraint firstItem="tiK-3d-v6o" firstAttribute="centerX" secondItem="8cB-oR-gsj" secondAttribute="centerX" id="D8J-iu-PBV"/>
+                            <constraint firstItem="tiK-3d-v6o" firstAttribute="top" secondItem="eBL-tI-pfg" secondAttribute="bottom" constant="36" id="SgW-Ll-dMi"/>
+                            <constraint firstItem="Yqb-mN-XKP" firstAttribute="trailing" secondItem="8cB-oR-gsj" secondAttribute="trailing" id="XO0-FN-ho5"/>
                             <constraint firstItem="8cB-oR-gsj" firstAttribute="trailing" secondItem="eBL-tI-pfg" secondAttribute="trailing" id="c0U-aK-vDG"/>
+                            <constraint firstItem="Yqb-mN-XKP" firstAttribute="top" secondItem="Y5K-P3-Sh5" secondAttribute="top" id="cX9-xp-C58"/>
                             <constraint firstItem="eBL-tI-pfg" firstAttribute="leading" secondItem="8cB-oR-gsj" secondAttribute="leading" id="eIn-sB-xRU"/>
                         </constraints>
                     </view>
@@ -84,6 +91,14 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickWall@4x-100" id="6VS-d2-epo">
+                            <rect key="frame" x="0.0" y="-59" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="852" id="IHm-gq-Bl6"/>
+                                <constraint firstAttribute="width" constant="393" id="eeF-iX-taG"/>
+                            </constraints>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_galeria" id="kXU-bs-pOZ" customClass="VistaCeldaGaleria" customModule="ProyectoFinalIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
@@ -138,6 +153,14 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickWall@4x-100" id="JFZ-za-KtA">
+                            <rect key="frame" x="0.0" y="-59" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="852" id="Mm9-us-tS7"/>
+                                <constraint firstAttribute="width" constant="393" id="ZTk-Gq-TZf"/>
+                            </constraints>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="Wb5-Ae-3hC" customClass="VistaDeCelda" customModule="ProyectoFinalIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
@@ -147,49 +170,64 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-hV-9H8">
-                                            <rect key="frame" x="26" y="27" width="240" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="240" id="fEW-Pu-an8"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="17"/>
-                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-jF-igI">
-                                            <rect key="frame" x="26" y="81" width="89" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="89" id="tWt-9K-HuN"/>
-                                            </constraints>
+                                            <rect key="frame" x="26.000000000000004" y="27" width="61.333333333333343" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Yb-ymm">
-                                            <rect key="frame" x="223" y="27" width="144" height="125"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="144" id="bDz-vj-yNv"/>
-                                                <constraint firstAttribute="width" constant="144" id="z9I-Dx-lCM"/>
-                                            </constraints>
-                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-jF-igI">
+                                            <rect key="frame" x="26.000000000000004" y="81" width="51.333333333333343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SK-q7-EY4">
                                             <rect key="frame" x="25.999999999999996" y="131" width="33.666666666666657" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACB-FZ-BU2">
+                                            <rect key="frame" x="25.999999999999996" y="56" width="46.666666666666657" height="21"/>
+                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc8-6n-voD">
+                                            <rect key="frame" x="25.999999999999996" y="8" width="54.666666666666657" height="21"/>
+                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXH-KA-xB1">
+                                            <rect key="frame" x="26" y="110" width="30.333333333333329" height="21"/>
+                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="17"/>
+                                            <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Yb-ymm">
+                                            <rect key="frame" x="223" y="19" width="144" height="144"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="144" id="bDz-vj-yNv"/>
+                                                <constraint firstAttribute="width" constant="144" id="z9I-Dx-lCM"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="I38-jF-igI" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="6bC-Fy-0eY"/>
-                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="EXf-qh-RHA"/>
-                                        <constraint firstAttribute="bottom" secondItem="hom-Yb-ymm" secondAttribute="bottom" constant="30" id="Fao-40-bK7"/>
-                                        <constraint firstAttribute="trailing" secondItem="hom-Yb-ymm" secondAttribute="trailing" constant="26" id="KMf-4w-TFP"/>
-                                        <constraint firstItem="I38-jF-igI" firstAttribute="top" secondItem="H4b-hV-9H8" secondAttribute="bottom" constant="33" id="MfC-a7-xGc"/>
-                                        <constraint firstAttribute="bottom" secondItem="6SK-q7-EY4" secondAttribute="bottom" constant="30" id="V8d-Ag-7zf"/>
-                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="top" secondItem="Gx8-Qx-qrb" secondAttribute="top" constant="27" id="aQz-4k-sct"/>
-                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="cdQ-zi-ara"/>
-                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="top" secondItem="I38-jF-igI" secondAttribute="bottom" constant="29" id="ePf-vv-xdc"/>
-                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="leading" secondItem="I38-jF-igI" secondAttribute="trailing" constant="108" id="fyG-5L-sDU"/>
-                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="top" secondItem="Gx8-Qx-qrb" secondAttribute="top" constant="27" id="z3F-JO-Kap"/>
+                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="1Kr-yX-81k"/>
+                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="top" secondItem="AXH-KA-xB1" secondAttribute="bottom" id="4KC-KE-SE3"/>
+                                        <constraint firstItem="AXH-KA-xB1" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="5m9-sK-WzS"/>
+                                        <constraint firstItem="ACB-FZ-BU2" firstAttribute="top" secondItem="H4b-hV-9H8" secondAttribute="bottom" constant="8" symbolic="YES" id="JZr-K5-eTF"/>
+                                        <constraint firstAttribute="bottom" secondItem="6SK-q7-EY4" secondAttribute="bottom" constant="30" id="P84-qF-F74"/>
+                                        <constraint firstItem="Sc8-6n-voD" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="Q9X-Pg-ykt"/>
+                                        <constraint firstItem="ACB-FZ-BU2" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="Zqi-jN-Lua"/>
+                                        <constraint firstItem="I38-jF-igI" firstAttribute="top" secondItem="ACB-FZ-BU2" secondAttribute="bottom" constant="4" id="bpf-Hh-trP"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="leading" secondItem="Sc8-6n-voD" secondAttribute="trailing" constant="142.33333333333334" id="dLV-Yh-YXN"/>
+                                        <constraint firstItem="H4b-hV-9H8" firstAttribute="top" secondItem="Sc8-6n-voD" secondAttribute="bottom" constant="-2" id="gkv-uN-PwP"/>
+                                        <constraint firstItem="hom-Yb-ymm" firstAttribute="centerY" secondItem="Gx8-Qx-qrb" secondAttribute="centerY" id="hBX-Ih-9RK"/>
+                                        <constraint firstItem="AXH-KA-xB1" firstAttribute="top" secondItem="I38-jF-igI" secondAttribute="bottom" constant="8" symbolic="YES" id="ilP-vF-ber"/>
+                                        <constraint firstItem="I38-jF-igI" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="sQR-Ie-auV"/>
+                                        <constraint firstItem="6SK-q7-EY4" firstAttribute="leading" secondItem="Gx8-Qx-qrb" secondAttribute="leading" constant="26" id="weu-1u-Trm"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -238,47 +276,87 @@ Al mismo tiempo podras conocer los distintos tipos de dragones, tal como especie
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoFinalIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-0m-6uH">
-                                <rect key="frame" x="8" y="111" width="377" height="650"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papiro" id="9Em-cP-oPB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="650" id="IVB-mx-H8H"/>
-                                    <constraint firstAttribute="width" constant="377" id="dt5-hc-hva"/>
+                                    <constraint firstAttribute="height" constant="852" id="JkK-xC-NRL"/>
+                                    <constraint firstAttribute="width" constant="393" id="mkU-gE-D9e"/>
                                 </constraints>
-                                <string key="text">Los dragones aparecen en casi todas las culturas de la Tierra. Algunos investigadores sugieren que nacen de nuestros miedos más primarios (una mezcla aterradora de garras afiladas, escamas impenetrables y dientes puntiagudos) que los primeros humanos utilizaban para enseñarse unos a otros los peligros del mundo.
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-gk-JAq">
+                                <rect key="frame" x="0.0" y="81" width="393" height="771"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RtO-U7-JJK">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="771"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="SNq-2Y-cLH"/>
+                                            <constraint firstAttribute="width" id="dyO-wi-oPJ"/>
+                                        </constraints>
+                                        <mutableString key="text">Introduccion.
 
-Estas criaturas míticas han cautivado la imaginación humana durante siglos, tejiendo su camino en el folclore, la literatura y el arte de todos los continentes. Pero, ¿por qué estos antiguos mitos siguen teniendo tanto poder sobre nosotros? He aquí seis leyendas épicas que demuestran por qué los dragones siguen encendiendo nuestra imaginación.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+Los dragones aparecen en casi todas las culturas de la Tierra. Algunos investigadores sugieren que nacen de nuestros miedos más primarios (una mezcla aterradora de garras afiladas, escamas impenetrables y dientes puntiagudos) que los primeros humanos utilizaban para enseñarse unos a otros los peligros del mundo.
+
+Estas criaturas míticas han cautivado la imaginación humana durante siglos, tejiendo su camino en el folclore, la literatura y el arte de todos los continentes. Pero, ¿por qué estos antiguos mitos siguen teniendo tanto poder sobre nosotros? He aquí seis leyendas épicas que demuestran por qué los dragones siguen encendiendo nuestra imaginación.
+
+El simbolismo del dragón
+
+En Occidente, el simbolismo alrededor del dragón es el de la lucha, entre el mismo dragón y un héroe o un dios. En estos míticos combates el dragón siempre asume un papel dual: el de devorador y el de guardián, cuya acción implica la muerte –o el nacimiento– de un orden universal.
+
+La mitología germana incluye al dragón entre las fuerzas del inframundo, la cual se alimenta de las raíces de Yggdrasil, el fresno sagrado y perenne que extiende sus raíces a través de todos los mundos. Los vikingos, en tanto, solían adornar las proas de sus “drakkar” o barcos esculpiéndolas en forma de dragón, pues pensaban que así asustarían a los espíritus –Landvaettir- que vigilaban las costas a las que llegaban. Para los celtas, el dragón fue una divinidad de los bosques, cuya fuerza podía ser controlada y utilizada por los magos, además de un símbolo heráldico y militar de soberanía. Para los romanos, en tanto, fue un símbolo de poder y sabiduría, mientras que para la mitología eslava era una de las formas que adoptaba el dios Veles, señor del Mundo Subterráneo.
+
+La tradición cristiana, por su parte, transformó al dragón en una figura diabólica, la encarnación del mal, “el dragón, la antigua serpiente” arrojada del cielo por el Arcángel San Miguel. Por ello, en el arte cristiano del Medioevo el dragón simbolizaba el pecado y al aparecer bajo los pies de los santos y mártires representaba el triunfo de la fe y los reinos cristianos sobre el diablo. Pero no siempre fue así, pues el verdadero dragón era una criatura ambivalente que poseía cualidades buenas y malas. Era un ser a quien había que propiciar con sacrificios humanos, guardián del agua que podía, si lo deseaba, proporcionar la lluvia. También era un símbolo de regeneración, por lo que matar al dragón simbolizaba volver a fertilizar la tierra (por ello, ese ritual simbólico se perpetuó en representaciones folklóricas y ritos anuales, tanto en Oriente como en Occidente).
+
+En Baviera, por ejemplo, el drama de la muerte del dragón se representaba el día de San Juan. El punto cúlmine del ritual ocurría cuando un hombre encarnando a San Jorge rompía una vegija llena de sangre que se hallaba dentro de la efigie del dragón. La sangre era recogida por los espectadores y después derramada sobre los campos de lino, para ayudar a la cosecha. El Año Nuevo chino, por su parte, se festeja con grandes dragones de papel y bambú, que se llevan en procesión por las calles.</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VXe-Gk-rH0" firstAttribute="trailing" secondItem="RtO-U7-JJK" secondAttribute="trailing" id="EJd-nP-zZ0"/>
+                                    <constraint firstItem="RtO-U7-JJK" firstAttribute="top" secondItem="Fuv-gk-JAq" secondAttribute="top" id="IZx-HB-2Ih"/>
+                                    <constraint firstItem="VXe-Gk-rH0" firstAttribute="bottom" secondItem="RtO-U7-JJK" secondAttribute="bottom" id="Up5-qE-wGb"/>
+                                    <constraint firstItem="RtO-U7-JJK" firstAttribute="leading" secondItem="VXe-Gk-rH0" secondAttribute="leading" id="YBv-nC-kbd"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JIL-Ss-445"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="VXe-Gk-rH0"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1644079507" green="0.104284061" blue="0.1116813988" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TKS-0m-6uH" secondAttribute="bottom" constant="8" id="m1b-BE-jCu"/>
-                            <constraint firstItem="TKS-0m-6uH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="t3Y-eA-jF8"/>
-                            <constraint firstItem="TKS-0m-6uH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="xsI-7g-KJE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TKS-0m-6uH" secondAttribute="trailing" constant="8" id="zSH-v1-CCY"/>
+                            <constraint firstItem="Fuv-gk-JAq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="81" id="7wC-QM-6oJ"/>
+                            <constraint firstItem="Fuv-gk-JAq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9wg-SP-JmS"/>
+                            <constraint firstAttribute="bottom" secondItem="Fuv-gk-JAq" secondAttribute="bottom" id="W7c-MU-jlI"/>
+                            <constraint firstItem="Fuv-gk-JAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cIv-br-j7A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cMP-i8-lSl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="63"/>
+            <point key="canvasLocation" x="-95.419847328244273" y="62.676056338028175"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BrickWall@4x-100" width="4096" height="4097"/>
         <image name="Dragons Logo@4x-100" width="2396" height="1732"/>
+        <image name="Papiro" width="600" height="809"/>
+        <image name="Texto Inicio@4x-100" width="734" height="734"/>
         <image name="book.pages.fill" catalog="system" width="107" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="photo.stack.fill" catalog="system" width="126" height="128"/>
         <image name="table.fill" catalog="system" width="128" height="93"/>
         <image name="tablecells.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
