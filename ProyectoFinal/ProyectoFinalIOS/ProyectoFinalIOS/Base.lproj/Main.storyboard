@@ -94,10 +94,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmg-gV-9kk">
-                                <rect key="frame" x="16" y="172" width="361" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="113" width="361" height="20.333333333333343"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="361" id="W36-z9-jmt"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="x9O-qm-W3B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -105,7 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h7-PL-9KB">
-                                <rect key="frame" x="0.0" y="89" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="30" width="393" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0ep-M0-JCO"/>
@@ -114,15 +113,35 @@
                                 <color key="textColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKD-Fy-ity">
+                                <rect key="frame" x="150" y="767" width="93" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="hW5-Rh-v64"/>
+                                    <constraint firstAttribute="height" constant="35" id="jjb-kv-wEa"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Regresar">
+                                    <color key="baseForegroundColor" red="0.47943383140000001" green="0.81797406459999999" blue="0.72305574480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3ud-fJ-pvw" kind="unwind" unwindAction="volver_a_la_galeriaWithSegue:" id="IPA-px-HZF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5jj-r6-HrU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jmg-gV-9kk" firstAttribute="leading" secondItem="5jj-r6-HrU" secondAttribute="leading" constant="16" id="BFF-gR-9Ls"/>
                             <constraint firstItem="5jj-r6-HrU" firstAttribute="trailing" secondItem="jmg-gV-9kk" secondAttribute="trailing" constant="16" id="DkJ-Ym-eo2"/>
+                            <constraint firstItem="kKD-Fy-ity" firstAttribute="leading" secondItem="5jj-r6-HrU" secondAttribute="leading" constant="150" id="L0E-qd-rZz"/>
                             <constraint firstItem="1h7-PL-9KB" firstAttribute="leading" secondItem="5jj-r6-HrU" secondAttribute="leading" id="S2f-Ea-JaO"/>
+                            <constraint firstItem="5jj-r6-HrU" firstAttribute="trailing" secondItem="kKD-Fy-ity" secondAttribute="trailing" constant="150" id="TQw-eY-33U"/>
                             <constraint firstItem="jmg-gV-9kk" firstAttribute="top" secondItem="1h7-PL-9KB" secondAttribute="bottom" constant="23" id="a2E-ZJ-hA0"/>
                             <constraint firstItem="1h7-PL-9KB" firstAttribute="top" secondItem="5jj-r6-HrU" secondAttribute="top" constant="30" id="s5N-1k-8L1"/>
+                            <constraint firstItem="5jj-r6-HrU" firstAttribute="bottom" secondItem="kKD-Fy-ity" secondAttribute="bottom" constant="50" id="vu0-P8-bbP"/>
                             <constraint firstItem="1h7-PL-9KB" firstAttribute="trailing" secondItem="5jj-r6-HrU" secondAttribute="trailing" id="xrj-tS-SOh"/>
                         </constraints>
                     </view>
@@ -132,6 +151,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjZ-xQ-NkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3ud-fJ-pvw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3619.0839694656488" y="-673.23943661971839"/>
         </scene>
@@ -172,11 +192,27 @@
                                                 <constraint firstAttribute="height" constant="112" id="b5V-na-4At"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNY-dO-uX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="lhM-w8-3ns"/>
+                                                <constraint firstAttribute="height" constant="128" id="rXs-ug-Lia"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <segue destination="iew-2i-KOx" kind="presentation" modalPresentationStyle="fullScreen" id="6mW-xa-0MR"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="lMc-Xq-P1w" firstAttribute="leading" secondItem="cz8-4z-o75" secondAttribute="leading" constant="8" id="0QG-ZN-W4u"/>
                                         <constraint firstAttribute="bottom" secondItem="lMc-Xq-P1w" secondAttribute="bottom" constant="8" id="2Lb-e4-mEH"/>
                                         <constraint firstAttribute="trailing" secondItem="lMc-Xq-P1w" secondAttribute="trailing" constant="8" id="4Ui-0I-MOK"/>
+                                        <constraint firstAttribute="trailing" secondItem="dNY-dO-uX3" secondAttribute="trailing" id="KQp-cy-JqM"/>
+                                        <constraint firstAttribute="bottom" secondItem="dNY-dO-uX3" secondAttribute="bottom" id="Sta-4b-bPE"/>
+                                        <constraint firstItem="dNY-dO-uX3" firstAttribute="leading" secondItem="cz8-4z-o75" secondAttribute="leading" id="a2I-5n-yM4"/>
+                                        <constraint firstItem="dNY-dO-uX3" firstAttribute="top" secondItem="cz8-4z-o75" secondAttribute="top" id="ePa-W7-H04"/>
                                         <constraint firstItem="lMc-Xq-P1w" firstAttribute="top" secondItem="cz8-4z-o75" secondAttribute="top" constant="8" id="x0j-m7-sGU"/>
                                     </constraints>
                                 </collectionViewCellContentView>
@@ -356,7 +392,7 @@
                                             <constraint firstAttribute="height" constant="1000" id="SNq-2Y-cLH"/>
                                             <constraint firstAttribute="width" id="dyO-wi-oPJ"/>
                                         </constraints>
-                                        <mutableString key="text">Introduccion.
+                                        <string key="text">Introduccion.
 
 Los dragones aparecen en casi todas las culturas de la Tierra. Algunos investigadores sugieren que nacen de nuestros miedos más primarios (una mezcla aterradora de garras afiladas, escamas impenetrables y dientes puntiagudos) que los primeros humanos utilizaban para enseñarse unos a otros los peligros del mundo.
 
@@ -370,7 +406,7 @@ La mitología germana incluye al dragón entre las fuerzas del inframundo, la cu
 
 La tradición cristiana, por su parte, transformó al dragón en una figura diabólica, la encarnación del mal, “el dragón, la antigua serpiente” arrojada del cielo por el Arcángel San Miguel. Por ello, en el arte cristiano del Medioevo el dragón simbolizaba el pecado y al aparecer bajo los pies de los santos y mártires representaba el triunfo de la fe y los reinos cristianos sobre el diablo. Pero no siempre fue así, pues el verdadero dragón era una criatura ambivalente que poseía cualidades buenas y malas. Era un ser a quien había que propiciar con sacrificios humanos, guardián del agua que podía, si lo deseaba, proporcionar la lluvia. También era un símbolo de regeneración, por lo que matar al dragón simbolizaba volver a fertilizar la tierra (por ello, ese ritual simbólico se perpetuó en representaciones folklóricas y ritos anuales, tanto en Oriente como en Occidente).
 
-En Baviera, por ejemplo, el drama de la muerte del dragón se representaba el día de San Juan. El punto cúlmine del ritual ocurría cuando un hombre encarnando a San Jorge rompía una vegija llena de sangre que se hallaba dentro de la efigie del dragón. La sangre era recogida por los espectadores y después derramada sobre los campos de lino, para ayudar a la cosecha. El Año Nuevo chino, por su parte, se festeja con grandes dragones de papel y bambú, que se llevan en procesión por las calles.</mutableString>
+En Baviera, por ejemplo, el drama de la muerte del dragón se representaba el día de San Juan. El punto cúlmine del ritual ocurría cuando un hombre encarnando a San Jorge rompía una vegija llena de sangre que se hallaba dentro de la efigie del dragón. La sangre era recogida por los espectadores y después derramada sobre los campos de lino, para ayudar a la cosecha. El Año Nuevo chino, por su parte, se festeja con grandes dragones de papel y bambú, que se llevan en procesión por las calles.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -43,4 +43,10 @@ class ControladorVistaGaleria : UICollectionViewController
         
         pantalla_de_galeria.id_dragon
     }
+    
+    
+    @IBAction func volver_a_la_galeria(segue: UIStoryboardSegue)
+    {
+        let pantalla_de_datos = segue.source as? ControladorVistaDatos
+    }
 }
