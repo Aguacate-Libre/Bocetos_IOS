@@ -17,9 +17,9 @@ public struct Dragon
     var imagen: UIImage
     var dato: String
 
-    init(_ id: Int, como_se_llama: String, como_se_ve: String, de_deonde_viene: String, retrato: UIImage, historia_y_datos: String)
+    init(identificacion: Int, como_se_llama: String, como_se_ve: String, de_deonde_viene: String, retrato: UIImage, historia_y_datos: String)
     {
-        self.id = id
+        id = identificacion
         nombre = como_se_llama
         tipo = como_se_ve
         origen = de_deonde_viene
@@ -30,14 +30,14 @@ public struct Dragon
 }
 
 public let Dragones = [
-    Dragon(1, como_se_llama: "Uthvara", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.redDragon, historia_y_datos: "Es rojo"),
-    Dragon(2, como_se_llama: "Fangblade", como_se_ve: "Sierpe", de_deonde_viene: "Fantasia", retrato: UIImage.greenWyrm, historia_y_datos: "Es verde"),
-    Dragon(3, como_se_llama: "Ganax", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.blueDragon, historia_y_datos: "Es azul"),
-    Dragon(4, como_se_llama: "Rampaseous", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.greenDragon, historia_y_datos: "Es verde"),
-    Dragon(5, como_se_llama: "Burner", como_se_ve: "Anfiteatro", de_deonde_viene: "Fantasia", retrato: UIImage.tinAmphithere, historia_y_datos: "Es estaño"),
-    Dragon(6, como_se_llama: "Steelkite", como_se_ve: "Guiverno", de_deonde_viene: "Fantasia", retrato: UIImage.brassWyvern, historia_y_datos: "Es bronce"),
-    Dragon(7, como_se_llama: "Tyrant", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.blackDragon, historia_y_datos: "Es negro"),
-    Dragon(8, como_se_llama: "Thunderbeak", como_se_ve: "Draco", de_deonde_viene: "Fantasia", retrato: UIImage.blueDrake, historia_y_datos: "Es azul"),
-    Dragon(9, como_se_llama: "Mist", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.whiteDragon, historia_y_datos: "Es blanco")
+    Dragon(identificacion: 1, como_se_llama: "Uthvara", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.redDragon, historia_y_datos: "Es rojo"),
+    Dragon(identificacion: 2, como_se_llama: "Fangblade", como_se_ve: "Sierpe", de_deonde_viene: "Fantasia", retrato: UIImage.greenWyrm, historia_y_datos: "Es verde"),
+    Dragon(identificacion: 3, como_se_llama: "Ganax", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.blueDragon, historia_y_datos: "Es azul"),
+    Dragon(identificacion: 4, como_se_llama: "Rampaseous", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.greenDragon, historia_y_datos: "Es verde"),
+    Dragon(identificacion: 5, como_se_llama: "Burner", como_se_ve: "Anfiteatro", de_deonde_viene: "Fantasia", retrato: UIImage.tinAmphithere, historia_y_datos: "Es estaño"),
+    Dragon(identificacion: 6, como_se_llama: "Steelkite", como_se_ve: "Guiverno", de_deonde_viene: "Fantasia", retrato: UIImage.brassWyvern, historia_y_datos: "Es bronce"),
+    Dragon(identificacion: 7, como_se_llama: "Tyrant", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.blackDragon, historia_y_datos: "Es negro"),
+    Dragon(identificacion: 8, como_se_llama: "Thunderbeak", como_se_ve: "Draco", de_deonde_viene: "Fantasia", retrato: UIImage.blueDrake, historia_y_datos: "Es azul"),
+    Dragon(identificacion: 9, como_se_llama: "Mist", como_se_ve: "Dragón", de_deonde_viene: "Fantasia", retrato: UIImage.whiteDragon, historia_y_datos: "Es blanco")
 ]
 

@@ -12,12 +12,11 @@ class ControladorVistaDatos: UIViewController
 {
     @IBOutlet weak var Nombre_seleccionado: UILabel!
     @IBOutlet weak var datos_seleccionado: UILabel!
-    private var dragon: Dragon
-    private var lista_de_dragones: [Dragon] = Dragones
+    public var dragon: Dragon?
     
     required init?(coder: NSCoder)
     {
-        self.dragon = Dragon(0, como_se_llama: "Desarrollador", como_se_ve: "Vista", de_deonde_viene: "Lugar", retrato: UIImage.dragonsLogo4X100, historia_y_datos: "Origen")
+        self.dragon = Dragon(identificacion: 0, como_se_llama: "Desarrollador", como_se_ve: "Vista", de_deonde_viene: "Lugar", retrato: UIImage.dragonsLogo4X100, historia_y_datos: "Origen")
         super.init(coder: coder)
         print("ERROR: no se cargo el init correcto.")
     }
@@ -36,15 +35,7 @@ class ControladorVistaDatos: UIViewController
     
     func mostrar_datos()
     {
-        Nombre_seleccionado.text = dragon.nombre
-        datos_seleccionado.text = dragon.dato
-    }
-    
-    func identificar_dragon(id_dragon)
-    {
-        if ( == )
-        {
-            
-        }
+        Nombre_seleccionado.text = dragon?.nombre
+        datos_seleccionado.text = dragon?.dato
     }
 }

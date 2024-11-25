@@ -80,7 +80,7 @@
         <!--Controlador Vista Datos-->
         <scene sceneID="IQB-Iu-Ryl">
             <objects>
-                <viewController id="iew-2i-KOx" customClass="ControladorVistaDatos" customModule="ProyectoFinalIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalles_de_dragon" id="iew-2i-KOx" customClass="ControladorVistaDatos" customModule="ProyectoFinalIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AoD-dQ-rQs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjZ-xQ-NkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3ud-fJ-pvw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3619.0839694656488" y="-673.23943661971839"/>
+            <point key="canvasLocation" x="-4063" y="-205"/>
         </scene>
         <!--Galeria-->
         <scene sceneID="duv-CR-FeL">
