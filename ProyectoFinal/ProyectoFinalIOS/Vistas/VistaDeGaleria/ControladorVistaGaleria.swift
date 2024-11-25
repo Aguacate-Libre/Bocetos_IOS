@@ -43,7 +43,8 @@ class ControladorVistaGaleria : UICollectionViewController
         let detalles_de_dragon = storyboard?.instantiateViewController(withIdentifier: "detalles_de_dragon") as! ControladorVistaDatos
         
         detalles_de_dragon.dragon = lista_de_dragones[indexPath.item]
-        navigationController?.popToViewController(detalles_de_dragon, animated: true)
+        navigationController!
+        .popToViewController(detalles_de_dragon, animated: true)
     }
     
     func identificar_dragon() -> Dragon
