@@ -39,10 +39,19 @@ class ControladorVistaGaleria : UICollectionViewController
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        let pantalla_de_galeria = storyboard?.instantiateViewController(withIdentifier: "detalles_de_dragon") as! ControladorVistaDatos
+        id_dragon = indexPath.item
+        let detalles_de_dragon = storyboard?.instantiateViewController(withIdentifier: "detalles_de_dragon") as! ControladorVistaDatos
         
-        pantalla_de_galeria.dragon = lista_de_dragones[indexPath.item]
-        navigationController?.popToViewController(pantalla_de_galeria, animated: true)
+        detalles_de_dragon.dragon = lista_de_dragones[indexPath.item]
+        navigationController?.popToViewController(detalles_de_dragon, animated: true)
+    }
+    
+    func identificar_dragon() -> Dragon
+    {
+        var datos_del_dragon: Dragon
+        datos_del_dragon = lista_de_dragones[id_dragon!]
+        
+        return datos_del_dragon
     }
     
     @IBAction func volver_a_la_galeria(segue: UIStoryboardSegue)
